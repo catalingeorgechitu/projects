@@ -7,14 +7,14 @@
 		<title>Main Page</title>
 		<link rel="stylesheet" href="/public/output.css" />
 	</head>
-	<body class="font-body bg-gray-100">
+	<body class="font-body bg-gray-100 max-w-screen-2xl mx-auto">
 		<!-- This is the root div -->
-		<div class="px-5 lg:px-40 pt-5">
+		<div class="px-5 lg:px-42 pt-5">
 			<!-- Navbar & Logo -->
 			<section class="flex justify-between items-center">
 				<div>
 					<img
-						class="mt-0 p-0 w-16 h-14 hover:scale-105 hover:cursor-pointer transform duration-300 hover:opacity-70"
+						class="ml-10 mt-0 p-0 w-16 h-14 hover:scale-105 hover:cursor-pointer transform duration-300 hover:opacity-70"
 						src="/public/img/logo-main.png"
 						alt="Logo"
 					/>
@@ -50,23 +50,25 @@
 					</h2>
 				</div>
 			</section>
-			<section class="grid-cols-3">
-				<div class="">Hmm...I should write something here...</div>
+			<section class="grid md:grid-cols-3 gap-4 mt-16">
+				<div class="font-bold text-3xl m-auto text-center">
+					Hmm...I should write something here...
+				</div>
 				<div>
-					<div class="wrapper absolute left-2/4 mt-14">
-						<div class="w-40 lg:w-72 -left-1/2 relative">
-							<img
-								class="w-40 h-40 lg:w-72 lg:h-72 img-back rounded-full shadow-lg absolute transform duration-500"
-								src="/public/img/cartoon-me-2.png"
-							/>
-							<img
-								class="w-40 h-40 lg:w-72 lg:h-72 img-front rounded-full shadow-lg absolute hover:opacity-0 transform duration-500"
-								src="/public/img/cartoon-me.png"
-							/>
-						</div>
+					<div class="wrapper w-40 h-40 lg:w-72 mx-auto">
+						<img
+							class="w-40 h-40 lg:w-72 lg:h-72 img-back rounded-full shadow-lg absolute transform duration-500"
+							src="/public/img/cartoon-me-2.png"
+						/>
+						<img
+							class="w-40 h-40 lg:w-72 lg:h-72 img-front rounded-full shadow-lg absolute hover:opacity-0 transform duration-500"
+							src="/public/img/cartoon-me.png"
+						/>
 					</div>
 				</div>
-				<div class="">Hmm...I should write something here too...</div>
+				<div class="font-bold text-3xl m-auto text-center">
+					Or maybe you should keep scrolling...
+				</div>
 			</section>
 		</div>
 		<script src="main.js"></script>
