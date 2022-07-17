@@ -5,16 +5,371 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Resume creator</title>
+		<script src="main.js"></script>
 	</head>
 	<body>
-		<h1>Your name:</h1>
-		<form>
-			<input name="fname" if="fname" type="text" />
-		</form>
-		<h2 id="typedName"></h2>
-		<h2 id="nameId">Catalin</h2>
+		<div id="fields">
+			<form>
+				<fieldset>
+					<label for="imgfield">Choose your Profile Picture:</label>
+					<br />
+					<input type="file" name="imgfield" id="imgfield" />
+				</fieldset>
+				<fieldset>
+					<label for="fname">Name:</label>
+					<input
+						type="text"
+						name="fname"
+						id="fname"
+						placeholder="John Thompson"
+					/>
+					<br />
 
-		<button type="button" onclick="myF()">Click Me!</button>
-		<script src="main.js"></script>
+					<label for="profession">Profession:</label>
+					<input
+						type="text"
+						name="profession"
+						id="profession"
+						placeholder="Fashion Designer"
+					/>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="summary">Executive Summary:</label>
+					<input
+						type="text"
+						name="summary"
+						id="summary"
+						placeholder="Say something about yourself"
+					/>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="expertise1">Skill 1:</label>
+					<input
+						type="text"
+						name="expertise1"
+						id="expertise1"
+						placeholder="Skill"
+					/>
+					<br />
+
+					<label for="expertise2">Skill 2:</label>
+					<input
+						type="text"
+						name="expertise2"
+						id="expertise2"
+						placeholder="Skill"
+					/>
+					<br />
+
+					<label for="expertise3">Skill 3:</label>
+					<input
+						type="text"
+						name="expertise3"
+						id="expertise3"
+						placeholder="Skill"
+					/>
+					<br />
+
+					<label for="expertise4">Skill 4:</label>
+					<input
+						type="text"
+						name="expertise4"
+						id="expertise4"
+						placeholder="Skill"
+					/>
+					<br />
+
+					<label for="expertise5">Skill 5:</label>
+					<input
+						type="text"
+						name="expertise5"
+						id="expertise5"
+						placeholder="Skill"
+					/>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="lng1">Language 1:</label>
+					<input type="text" name="lng1" id="lng1" placeholder="English" />
+					<br />
+					<label for="lng2">Language 2:</label>
+					<input type="text" name="lng2" id="lng2" placeholder="French" />
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="phone">Phone number:</label>
+					<input type="tel" name="phone" id="phone" placeholder="0712345678" />
+					<br />
+
+					<label for="meail">Email:</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="youremail@email.com"
+					/>
+					<br />
+					<label for="adress">Adress:</label>
+					<input
+						type="text"
+						name="adress"
+						id="adress"
+						placeholder="Street Nr. 1, Bucharest, Sector 1"
+					/>
+					<br />
+
+					<label for="linkedin">Linkedin:</label>
+					<input
+						type="text"
+						name="linkedin"
+						id="linkedin"
+						placeholder="@mylinkedinaccount"
+					/>
+					<br />
+				</fieldset>
+				<fieldset>
+					<label for="jobposition1">Job Position</label>
+					<input
+						type="text"
+						name="jobposition1"
+						id="jobposition1"
+						placeholder="Stylist/Fashion Designer"
+					/>
+					<br />
+
+					<label for="company1">Company 1</label>
+					<input
+						type="text"
+						name="company1"
+						id="company1"
+						placeholder="Gucci America Inc."
+					/>
+					<br />
+
+					<label for="period1-start">Start:</label>
+					<input type="month" name="period1-start" id="period1-start" />
+
+					<label for="period1-end">End:</label>
+					<input type="month" name="period1-end" id="period1-end" />
+					<br />
+
+					<label for="job1-task1">Task 1:</label>
+					<input
+						type="text"
+						name="job1-task1"
+						id="job1-task1"
+						placeholder="Styled models and celebrities for photo shoots, events and guestings"
+					/>
+					<br />
+					<label for="job1-task2">Task 2:</label>
+					<input
+						type="text"
+						name="job1-task2"
+						id="job1-task2"
+						placeholder="Produced designs for Summer/Spring collections"
+					/>
+					<br />
+					<label for="job1-task3">Task 3:</label>
+					<input
+						type="text"
+						name="job1-task3"
+						id="job1-task3"
+						placeholder="Sourced fabrics for the brand"
+					/>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="jobposition2">Job Position</label>
+					<input
+						type="text"
+						name="jobposition2"
+						id="jobposition2"
+						placeholder="Styling and Design Head"
+					/>
+					<br />
+
+					<label for="company1">Company 2</label>
+					<input
+						type="text"
+						name="company2"
+						id="company2"
+						placeholder="Inditex"
+					/>
+					<br />
+
+					<label for="period2-start">Start:</label>
+					<input type="month" name="period2-start" id="period2-start" />
+
+					<label for="period2-end">End:</label>
+					<input type="month" name="period2-end" id="period2-end" />
+					<br />
+
+					<label for="job2-task1">Task 1:</label>
+					<input
+						type="text"
+						name="job2-task1"
+						id="job2-task1"
+						placeholder="Provided design ideas to in-house designers and clients"
+					/>
+					<br />
+					<label for="job2-task2">Task 2:</label>
+					<input
+						type="text"
+						name="job2-task2"
+						id="job2-task2"
+						placeholder="Planned and developed the 2015 Fall/Winter Collection"
+					/>
+					<br />
+					<label for="job2-task3">Task 3:</label>
+					<input
+						type="text"
+						name="job2-task3"
+						id="job2-task3"
+						placeholder="Supervised the design and production process"
+					/>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<label for="school1">School/Univeristy 1</label>
+					<input
+						type="text"
+						name="school1"
+						id="school1"
+						placeholder="Universitatea de Arte Bucuresti"
+					/>
+					<br />
+
+					<label for="degree1">Degree 1:</label>
+					<input
+						type="text"
+						name="degree1"
+						id="degree1"
+						placeholder="Major in Fashion Design and Merchandising"
+					/>
+					<br />
+
+					<label for="degree1-achiev1">Achievements 1:</label>
+					<input
+						type="text"
+						name="degree1-achiev1"
+						id="degree1-achiev1"
+						placeholder="Received the Vica Avant-Garde Award in 2012"
+					/>
+					<br />
+					<label for="degree1-achiev2">Achievements 2:</label>
+					<input
+						type="text"
+						name="degree1-achiev2"
+						id="degree1-achiev2"
+						placeholder="Designed a streetwear collection for the Vica Charity Fashion Show in 2014"
+					/>
+					<br />
+					<label for="degree1-achiev3">Achievements 3:</label>
+					<input
+						type="text"
+						name="degree1-achiev3"
+						id="degree1-achiev3"
+						placeholder="Graduated with honors"
+					/>
+				</fieldset>
+
+				<fieldset>
+					<label for="school2">School/Univeristy 2</label>
+					<input
+						type="text"
+						name="school2"
+						id="school2"
+						placeholder="Liceul de Arte Plastice Nicolae Tonitza"
+					/>
+					<br />
+
+					<label for="degree2">Degree 2:</label>
+					<input
+						type="text"
+						name="degree2"
+						id="degree2"
+						placeholder="Class Salutatorian"
+					/>
+					<br />
+
+					<label for="degree2-achiev1">Achievements 1:</label>
+					<input
+						type="text"
+						name="degree2-achiev1"
+						id="degree2-achiev1"
+						placeholder="President of the Brampcrest Student Council, 2007"
+					/>
+					<br />
+					<label for="degree2-achiev2">Achievements 2:</label>
+					<input
+						type="text"
+						name="degree2-achiev2"
+						id="degree2-achiev2"
+						placeholder="Member of the Brampcrest Voleyball Team"
+					/>
+					<br />
+					<label for="degree2-achiev3">Achievements 3:</label>
+					<input
+						type="text"
+						name="degree2-achiev3"
+						id="degree2-achiev3"
+						placeholder="Volunteer at the BHS Tutor for the Future program"
+					/>
+				</fieldset>
+			</form>
+		</div>
+		<div id="resume">
+			<div>
+				<img src="default.png" alt="default-picture" id="imgfieldR" />
+				<p id="fnameR">John Bob</p>
+				<p id="professionR">Front End Developer</p>
+				<p id="summaryR">Executive Summary</p>
+				<p id="expertise1R">Skill 1</p>
+				<p id="expertise2R">Skill 2</p>
+				<p id="expertise3R">Skill 3</p>
+				<p id="expertise4R">Skill 4</p>
+				<p id="expertise5R">Skill 5</p>
+				<p id="lng1R">Language 1</p>
+				<p id="lng2R">Language 2</p>
+				<p id="phoneR">0712345678</p>
+				<p id="emailR">Email</p>
+				<p id="adressR">Adress</p>
+				<p id="linkedinR">Linkedin</p>
+				<p id="jobposition1R">Job Position 1</p>
+				<p id="company1R">Company 1</p>
+				<p id="period1-startR">Start</p>
+				<p id="period1-endR">End</p>
+				<p id="job1-task1R">Task 1</p>
+				<p id="job1-task2R">Task 2</p>
+				<p id="job1-task3R">Task 3</p>
+				<p id="jobposition2R">Job Position 2</p>
+				<p id="company2R">Company 2</p>
+				<p id="period2-startR">Start</p>
+				<p id="period2-endR">End</p>
+				<p id="job2-task1R">Task 1</p>
+				<p id="job2-task2R">Task 2</p>
+				<p id="job2-task3R">Task 3</p>
+				<p id="school1R">School 1</p>
+				<p id="degree1R">Degree 1</p>
+				<p id="degree1-achiev1R">Achiev 1</p>
+				<p id="degree1-achiev2R">Achiev 2</p>
+				<p id="degree1-achiev3R">Achiev 3</p>
+				<p id="school2R">School 2</p>
+				<p id="degree2R">Degree 2</p>
+				<p id="degree2-achiev1R">Achiev 1</p>
+				<p id="degree2-achiev2R">Achiev 2</p>
+				<p id="degree2-achiev3R">Achiev 3</p>
+			</div>
+		</div>
+
+		<button onclick="generateCv()">Generate CV</button>
 	</body>
 </html>
