@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="/public/output.css" />
 	</head>
 	<body
-		class="font-body bg-gradient-to-r bg-gradient-to-r from-indigo-50 via-yellow-50 to-green-50"
+		class="font-body bg-gradient-to-r bg-gradient-to-r from-indigo-50 via-yellow-50 to-green-50 mx-4"
 	>
 		<!-- Header/title of the page -->
 		<header id="header" class="text-center m-16">
@@ -21,8 +21,11 @@
 
 		<!-- Here goes the fields -->
 		<div id="fields">
-			<form class="flex justify-center">
-				<div class="w-full max-w-md">
+			<div class="m-auto mb-10 drop-shadow-xl w-full max-w-md">
+				<img src="/public/template.jpg" alt="" />
+			</div>
+			<form class="md:flex justify-center">
+				<div class="w-full max-w-md mx-auto md:mx-10">
 					<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 						<fieldset class="mb-4">
 							<label
@@ -245,7 +248,7 @@
 					</div>
 				</div>
 
-				<div class="ml-14 w-full max-w-md">
+				<div class="w-full max-w-md mx-auto md:mx-10">
 					<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 						<fieldset class="mb-6">
 							<label
@@ -586,9 +589,10 @@
 		</div>
 
 		<!-- Resume template -->
+
 		<div
 			id="resume"
-			class="my-10 pb-10 container mx-auto max-w-screen-md text-gray-600 bg-gray-50 shadow-lg hidden"
+			class="my-10 pb-10 container mx-auto w-full max-w-screen-md text-gray-600 bg-gray-50 shadow-lg hidden"
 		>
 			<div>
 				<div class="overflow-hidden flex bg-gradient-to-b from-sky-200">
@@ -638,7 +642,7 @@
 
 						<p id="jobposition1R" class="font-bold uppercase">Job Position 1</p>
 						<p id="company1R">Company 1</p>
-						<div>
+						<div class="mb-2">
 							<span id="period1-startR">Start</span> to
 							<span id="period1-endR">End</span>
 						</div>
@@ -650,7 +654,7 @@
 							Job Position 2
 						</p>
 						<p id="company2R">Company 2</p>
-						<div>
+						<div class="mb-2">
 							<span id="period2-startR">Start</span> to
 							<span id="period2-endR">End</span>
 						</div>
@@ -674,6 +678,7 @@
 				</div>
 			</div>
 		</div>
+
 		<button
 			id="resume-button"
 			class="hidden mt-5 mb-10 block mx-auto bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
