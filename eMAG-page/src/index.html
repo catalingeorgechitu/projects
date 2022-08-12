@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>eMag Laptops</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body>
+		<div class="my-3">
+			<navbar class="h-9 flex max-w-screen-2xl mx-auto">
+				<!-- Emag Logo -->
+				<img class="w-36" src="/public/img/emag-icon.svg" />
+
+				<!-- Searchbar -->
+				<div class="w-7/12 relative">
+					<input
+						class="mx-4 px-4 border w-full h-full border-blue-400 rounded-full"
+						type="text"
+						placeholder="Incepe o noua cautare"
+					/>
+					<i
+						class="absolute bottom-2 right-0 text-blue-400 text-l fas fa-search hover:cursor-pointer"
+					></i>
+				</div>
+				<!-- User account -->
+				<div class="flex items-center ml-10 hover:cursor-pointer">
+					<img class="rounded-full h-9" src="/public/img/profile-pic.jpg" />
+					<span class="ml-2">Contul meu</span>
+					<i class="fa-solid fa-sort-down text-xs ml-1"></i>
+				</div>
+
+				<!-- Favorite menu -->
+				<div class="flex items-center ml-8 hover:cursor-pointer">
+					<i class="fa-regular fa-heart text-blue-400 text-xl"></i>
+					<span class="ml-2">Favorite</span>
+					<i class="fa-solid fa-sort-down text-xs ml-1"></i>
+				</div>
+
+				<!-- Cart menu -->
+				<div class="flex items-center ml-8 hover:cursor-pointer">
+					<!-- <i class="fa-brands fa-opencart text-blue-400 text-xl"></i> -->
+					<!-- <i class="fa-solid fa-cart-shopping text-blue-400 text-xl"></i> -->
+					<img src="/public/img/cartimg.jpg" />
+					<span class="ml-1">Cosul meu</span>
+					<i class="fa-solid fa-sort-down text-xs ml-1"></i>
+				</div>
+			</navbar>
+
+			<!-- Secondary navbar -->
+			<navbar class="flex max-w-screen-2xl mx-auto">
+				<!-- Background gradient color -->
+				<div
+					class="absolute bg-gradient-to-r from-red-600 via-indigo-700 to-blue-500 left-0 h-10 w-full mt-4"
+				></div>
+
+				<!-- Produse tab -->
+				<div
+					class="absolute bg-white rounded-md mt-5 py-1 hover:cursor-pointer"
+				>
+					<i class="fa-solid fa-bars pl-2 text-sm"></i>
+					<span class="p-2 font-semibold">Produse</span>
+				</div>
+				<!-- Genius tab -->
+				<div
+					class="absolute mt-5 ml-28 py-1 hover:border border-white rounded-full cursor-pointer"
+				>
+					<span class="p-2 text-white text-xs">Genius</span>
+				</div>
+				<!-- Necesare zi de zi tab -->
+				<div
+					class="absolute mt-5 ml-44 py-1 hover:border border-white rounded-full cursor-pointer"
+				>
+					<span class="p-2 text-white text-xs">Necesare zi de zi</span>
+				</div>
+				<!-- Card eMAG -->
+				<div
+					class="absolute mt-5 ml-72 py-1 hover:border border-white rounded-full cursor-pointer"
+				>
+					<span class="p-2 text-white text-xs">Card eMAG</span>
+				</div>
+				<!-- Resigilate -->
+				<div
+					class="absolute mt-5 ml-96 py-1 hover:border border-white rounded-full cursor-pointer"
+				>
+					<span class="p-2 text-white text-xs">Resigilate</span>
+				</div>
+				<!-- eMAG Help -->
+				<div
+					class="absolute mt-5 right-60 py-1 hover:border border-white rounded-full cursor-pointer"
+				>
+					<i class="fa-solid fa-headset text-white pl-2"></i>
+					<span class="py-2 pl-1 pr-2 text-white text-xs">eMAG Help</span>
+				</div>
+			</navbar>
+
+			<!-- Main Page -->
+			<main class="bg-gray-100 mt-14 pt-5">
+				<!-- Page header -->
+				<header class="max-w-screen-2xl mx-auto">
+					<ol class="flex">
+						<li class="text-xs text-blue-700">Laptop, Tablete & Telefoane /</li>
+						<li class="text-xs text-blue-700 ml-1">Laptopuri si accesorii /</li>
+						<li class="text-xs ml-1 text-gray-600">Laptopuri</li>
+					</ol>
+				</header>
+
+				<div class="grid grid-cols-5 mt-5 max-w-screen-2xl mx-auto">
+					<!-- Left section -->
+					<section class="mr-4">
+						<!-- Categorii -->
+						<div class="bg-sky-50 py-4">
+							<h2 class="font-semibold pl-3 text-sky-600 hover:cursor-pointer">
+								Categorii
+							</h2>
+							<h3
+								class="font-semibold pt-4 pl-5 text-sky-600 text-sm hover:cursor-pointer"
+							>
+								Laptop / Notebook
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Genti laptop
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Docking stations
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Standuri/Coolere notebook
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Hard disk-uri notebook
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Memorii Notebook
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Incarcatoare laptop
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Alte accesorii Laptop
+							</h3>
+							<h3 class="pt-1 pl-5 text-sky-600 text-sm hover:cursor-pointer">
+								Resigilate
+							</h3>
+						</div>
+
+						<!-- eMAG Genius -->
+						<div class="mt-4 pb-2 pl-4 pt-3 bg-white pr-4">
+							<div class="flex items-center justify-between">
+								<div class="flex items-center">
+									<h1 class="font-bold text-sm">eMAG Genius</h1>
+									<div
+										class="bg-gradient-to-r from-blue-700 to-red-600 font-semibold text-sm text-white rounded-full px-2 ml-2 pb-1"
+									>
+										genius
+									</div>
+								</div>
+								<div>
+									<i class="fa-solid fa-angle-up"></i>
+								</div>
+							</div>
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Livrare gratuita</h2>
+							</div>
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Livrare gratuita maine</h2>
+							</div>
+							<div class="border-b-2 mr-4"></div>
+							<div class="flex text-sky-600 text-sm items-center mt-3">
+								<i class="fa-solid fa-angles-right text-xs mr-1"></i>
+								<h2 class="text-sm">Incearca Genius gratuit</h2>
+							</div>
+						</div>
+
+						<!-- Tip procesor -->
+						<div
+							class="mt-4 pb-2 pl-4 pt-3 bg-white pr-4 h-72 overflow-y-scroll"
+						>
+							<div class="flex items-center justify-between">
+								<h1 class="font-bold text-sm">Tip procesor</h1>
+								<i class="fa-solid fa-angle-up"></i>
+							</div>
+
+							<input
+								class="border w-full rounded-sm p-2 text-xs mt-2"
+								type="text"
+								placeholder="Cauta..."
+							/>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Celeron®</h2>
+								<span class="text-sm ml-1 text-gray-400">(102)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Pentium®</h2>
+								<span class="text-sm ml-1 text-gray-400">(39)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Core™ i3</h2>
+								<span class="text-sm ml-1 text-gray-400">(187)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Core™ i5</h2>
+								<span class="text-sm ml-1 text-gray-400">(741)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Core™ i7</h2>
+								<span class="text-sm ml-1 text-gray-400">(707)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Core™ i9</h2>
+								<span class="text-sm ml-1 text-gray-400">(70)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Intel® Xeon®</h2>
+								<span class="text-sm ml-1 text-gray-400">(4)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD Athlon™</h2>
+								<span class="text-sm ml-1 text-gray-400">(23)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD A4-Series</h2>
+								<span class="text-sm ml-1 text-gray-400">(6)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD A9-Series</h2>
+								<span class="text-sm ml-1 text-gray-400">(1)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD Ryzen™ 3</h2>
+								<span class="text-sm ml-1 text-gray-400">(108)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD Ryzen™ 5</h2>
+								<span class="text-sm ml-1 text-gray-400">(253)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD Ryzen™ 7</h2>
+								<span class="text-sm ml-1 text-gray-400">(254)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">AMD Ryzen™ 9</h2>
+								<span class="text-sm ml-1 text-gray-400">(57)</span>
+							</div>
+						</div>
+
+						<!-- Capacitate memorie -->
+						<div class="mt-4 pb-2 pl-4 pt-3 bg-white pr-4">
+							<div class="flex items-center justify-between">
+								<h1 class="font-bold text-sm">Capacitate memorie</h1>
+								<i class="fa-solid fa-angle-up"></i>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Sub 4 GB</h2>
+								<span class="text-sm ml-1 text-gray-400">(1)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">4 GB</h2>
+								<span class="text-sm ml-1 text-gray-400">(201)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">6 - 8 GB</h2>
+								<span class="text-sm ml-1 text-gray-400">(1208)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">12 - 16 GB</h2>
+								<span class="text-sm ml-1 text-gray-400">(1091)</span>
+							</div>
+
+							<div class="flex items-center mt-2">
+								<div class="border rounded-sm border-gray-300 h-4 w-4"></div>
+								<h2 class="ml-3 text-sm">Peste 16 GB</h2>
+								<span class="text-sm ml-1 text-gray-400">(209)</span>
+							</div>
+						</div>
+					</section>
+
+					<!-- Main section -->
+					<section class="col-span-4 mr-10">
+						<!-- Header of the main saction -->
+						<div class="bg-white px-4 pt-1 pb-4">
+							<header
+								class="flex items-baseline border-b-2 my-2 pb-4 border-gray-100"
+							>
+								<h1 class="text-3xl font-normal">Laptopuri</h1>
+								<h2 class="ml-4 text-xl">2771 produse</h2>
+							</header>
+
+							<main class="border-b-2 my-2 pb-4 border-gray-100">
+								<h2 class="text-sm font-semibold">Alege Tip laptop</h2>
+								<div class="flex mt-2">
+									<span
+										class="m-1 border px-6 py-1 rounded-full hover:cursor-pointer"
+										>Home</span
+									>
+									<span
+										class="m-1 border px-6 py-1 rounded-full hover:cursor-pointer"
+										>Business</span
+									>
+									<span
+										class="m-1 border px-6 py-1 rounded-full hover:cursor-pointer"
+										>Gaming</span
+									>
+									<span
+										class="m-1 border px-6 py-1 rounded-full hover:cursor-pointer"
+										>Ultraportabil</span
+									>
+									<span
+										class="m-1 border px-6 py-1 rounded-full hover:cursor-pointer"
+										>2in1</span
+									>
+								</div>
+							</main>
+
+							<footer class="flex justify-between items-center">
+								<!-- Left row -->
+								<div class="flex mt-6 text-xs items-center">
+									<h3>Ordoneaza dupa:</h3>
+									<span class="border rounded-sm p-2 mx-1 hover:cursor-pointer"
+										>Cele mai populare
+										<i class="fa-solid fa-angle-down pl-2 pr-1"></i>
+									</span>
+
+									<h3 class="ml-2">Produse:</h3>
+									<span class="border rounded-sm p-2 mx-1 hover:cursor-pointer"
+										>60 pe pagina<i class="fa-solid fa-angle-down pl-2 pr-1"></i
+									></span>
+								</div>
+								<!-- Right row -->
+								<div class="flex mt-6 text-xs items-center">
+									<h3 class="mr-2">Tip afisare:</h3>
+									<!-- <i
+										class="fas fa-bars border p-2 border-gray-400 rounded-sm"
+									></i> -->
+									<!-- <i class="fa-solid fa-grid-2"></i> -->
+									<svg
+										class="w-8 h-8 border p-1 rounded-l-md hover:cursor-pointer"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M4 6h16M4 10h16M4 14h16M4 18h16"
+										></path>
+									</svg>
+
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-8 w-8 border p-1 rounded-r-md bg-gray-200 hover:cursor-pointer"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+										/>
+									</svg>
+								</div>
+							</footer>
+						</div>
+					</section>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
