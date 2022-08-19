@@ -1,1708 +1,1796 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>eMag Laptops</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="/public/output.css" />
-	</head>
-	<body>
-		<div class="my-3">
-			<navbar class="mx-auto flex h-9 max-w-screen-2xl">
-				<!-- Emag Logo -->
-				<img class="w-36" src="/public/img/emag-icon.svg" />
-
-				<!-- Searchbar -->
-				<div class="relative w-7/12">
-					<input
-						class="mx-4 h-full w-full rounded-full border border-blue-400 px-4"
-						type="text"
-						placeholder="Incepe o noua cautare"
-					/>
-					<i
-						class="text-l fas fa-search absolute bottom-2 right-0 text-blue-400 hover:cursor-pointer"
-					></i>
-				</div>
-				<!-- User account -->
-				<div class="ml-10 flex items-center hover:cursor-pointer">
-					<img class="h-9 rounded-full" src="/public/img/profile-pic.jpg" />
-					<span class="ml-2">Contul meu</span>
-					<i class="fa-solid fa-sort-down ml-1 text-xs"></i>
-				</div>
-
-				<!-- Favorite menu -->
-				<div class="ml-8 flex items-center hover:cursor-pointer">
-					<i class="fa-regular fa-heart text-xl text-blue-400"></i>
-					<span class="ml-2">Favorite</span>
-					<i class="fa-solid fa-sort-down ml-1 text-xs"></i>
-				</div>
-
-				<!-- Cart menu -->
-				<div class="ml-8 flex items-center hover:cursor-pointer">
-					<!-- <i class="fa-brands fa-opencart text-blue-400 text-xl"></i> -->
-					<!-- <i class="fa-solid fa-cart-shopping text-blue-400 text-xl"></i> -->
-					<img src="/public/img/cartimg.jpg" />
-					<span class="ml-1">Cosul meu</span>
-					<i class="fa-solid fa-sort-down ml-1 text-xs"></i>
-				</div>
-			</navbar>
-
-			<!-- Secondary navbar -->
-			<navbar class="mx-auto flex max-w-screen-2xl">
-				<!-- Background gradient color -->
-				<div
-					class="absolute left-0 mt-4 h-10 w-full bg-gradient-to-r from-red-600 via-indigo-700 to-blue-500"
-				></div>
-
-				<!-- Produse tab -->
-				<div
-					class="absolute mt-5 rounded-md bg-white py-1 hover:cursor-pointer"
-				>
-					<i class="fa-solid fa-bars pl-2 text-sm"></i>
-					<span class="p-2 font-semibold">Produse</span>
-				</div>
-				<!-- Genius tab -->
-				<div
-					class="absolute mt-5 ml-28 cursor-pointer rounded-full border-white py-1 hover:border"
-				>
-					<span class="p-2 text-xs text-white">Genius</span>
-				</div>
-				<!-- Necesare zi de zi tab -->
-				<div
-					class="absolute mt-5 ml-44 cursor-pointer rounded-full border-white py-1 hover:border"
-				>
-					<span class="p-2 text-xs text-white">Necesare zi de zi</span>
-				</div>
-				<!-- Card eMAG -->
-				<div
-					class="absolute mt-5 ml-72 cursor-pointer rounded-full border-white py-1 hover:border"
-				>
-					<span class="p-2 text-xs text-white">Card eMAG</span>
-				</div>
-				<!-- Resigilate -->
-				<div
-					class="absolute mt-5 ml-96 cursor-pointer rounded-full border-white py-1 hover:border"
-				>
-					<span class="p-2 text-xs text-white">Resigilate</span>
-				</div>
-				<!-- eMAG Help -->
-				<div
-					class="absolute right-60 mt-5 cursor-pointer rounded-full border-white py-1 hover:border"
-				>
-					<i class="fa-solid fa-headset pl-2 text-white"></i>
-					<span class="py-2 pl-1 pr-2 text-xs text-white">eMAG Help</span>
-				</div>
-			</navbar>
-
-			<!-- Main Page -->
-			<main class="mt-14 bg-gray-100 pt-5 pb-8">
-				<!-- Page header -->
-				<header class="mx-auto max-w-screen-2xl">
-					<ol class="flex">
-						<li class="text-xs text-blue-700">Laptop, Tablete & Telefoane /</li>
-						<li class="ml-1 text-xs text-blue-700">Laptopuri si accesorii /</li>
-						<li class="ml-1 text-xs text-gray-600">Laptopuri</li>
-					</ol>
-				</header>
-
-				<div class="mx-auto mt-5 grid max-w-screen-2xl grid-cols-5">
-					<!-- Left section -->
-					<section class="mr-4">
-						<!-- Categorii -->
-						<div class="bg-sky-50 py-4">
-							<h2 class="pl-3 font-semibold text-sky-600 hover:cursor-pointer">
-								Categorii
-							</h2>
-							<h3
-								class="pt-4 pl-5 text-sm font-semibold text-sky-600 hover:cursor-pointer"
-							>
-								Laptop / Notebook
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Genti laptop
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Docking stations
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Standuri/Coolere notebook
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Hard disk-uri notebook
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Memorii Notebook
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Incarcatoare laptop
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Alte accesorii Laptop
-							</h3>
-							<h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
-								Resigilate
-							</h3>
-						</div>
-
-						<!-- eMAG Genius -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<div class="flex items-center">
-									<h1 class="text-sm font-bold">eMAG Genius</h1>
-									<div
-										class="ml-2 rounded-full bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-sm font-semibold text-white"
-									>
-										genius
-									</div>
-								</div>
-								<div>
-									<i class="fa-solid fa-angle-up"></i>
-								</div>
-							</div>
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Livrare gratuita</h2>
-							</div>
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Livrare gratuita maine</h2>
-							</div>
-							<div class="mr-4 border-b-2"></div>
-							<div
-								class="mt-3 flex items-center text-sm text-sky-600 hover:cursor-pointer"
-							>
-								<i class="fa-solid fa-angles-right mr-1 text-xs"></i>
-								<h2 class="text-sm">Incearca Genius gratuit</h2>
-							</div>
-						</div>
-
-						<!-- Tip procesor -->
-						<div
-							class="mt-4 h-72 overflow-y-scroll bg-white pb-2 pl-4 pt-3 pr-4"
-						>
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Tip procesor</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<input
-								class="mt-2 w-full rounded-sm border p-2 text-xs"
-								type="text"
-								placeholder="Cauta..."
-							/>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Celeron®</h2>
-								<span class="ml-1 text-sm text-gray-400">(102)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Pentium®</h2>
-								<span class="ml-1 text-sm text-gray-400">(39)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Core™ i3</h2>
-								<span class="ml-1 text-sm text-gray-400">(187)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Core™ i5</h2>
-								<span class="ml-1 text-sm text-gray-400">(741)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Core™ i7</h2>
-								<span class="ml-1 text-sm text-gray-400">(707)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Core™ i9</h2>
-								<span class="ml-1 text-sm text-gray-400">(70)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel® Xeon®</h2>
-								<span class="ml-1 text-sm text-gray-400">(4)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD Athlon™</h2>
-								<span class="ml-1 text-sm text-gray-400">(23)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD A4-Series</h2>
-								<span class="ml-1 text-sm text-gray-400">(6)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD A9-Series</h2>
-								<span class="ml-1 text-sm text-gray-400">(1)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD Ryzen™ 3</h2>
-								<span class="ml-1 text-sm text-gray-400">(108)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD Ryzen™ 5</h2>
-								<span class="ml-1 text-sm text-gray-400">(253)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD Ryzen™ 7</h2>
-								<span class="ml-1 text-sm text-gray-400">(254)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD Ryzen™ 9</h2>
-								<span class="ml-1 text-sm text-gray-400">(57)</span>
-							</div>
-						</div>
-
-						<!-- Capacitate memorie -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Capacitate memorie</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Sub 4 GB</h2>
-								<span class="ml-1 text-sm text-gray-400">(1)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">4 GB</h2>
-								<span class="ml-1 text-sm text-gray-400">(201)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">6 - 8 GB</h2>
-								<span class="ml-1 text-sm text-gray-400">(1208)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">12 - 16 GB</h2>
-								<span class="ml-1 text-sm text-gray-400">(1091)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Peste 16 GB</h2>
-								<span class="ml-1 text-sm text-gray-400">(209)</span>
-							</div>
-						</div>
-						<!-- Brand -->
-						<div
-							class="mt-4 h-72 overflow-y-scroll bg-white pb-2 pl-4 pt-3 pr-4"
-						>
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Brand</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<input
-								class="mt-2 w-full rounded-sm border p-2 text-xs"
-								type="text"
-								placeholder="Cauta..."
-							/>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Lenovo</h2>
-								<span class="ml-1 text-sm text-gray-400">(586)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">HP</h2>
-								<span class="ml-1 text-sm text-gray-400">(495)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Dell</h2>
-								<span class="ml-1 text-sm text-gray-400">(487)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Asus</h2>
-								<span class="ml-1 text-sm text-gray-400">(360)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Acer</h2>
-								<span class="ml-1 text-sm text-gray-400">(259)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Apple</h2>
-								<span class="ml-1 text-sm text-gray-400">(99)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">MSI</h2>
-								<span class="ml-1 text-sm text-gray-400">(45)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Microsoft</h2>
-								<span class="ml-1 text-sm text-gray-400">(23)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">LG</h2>
-								<span class="ml-1 text-sm text-gray-400">(19)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Huawei</h2>
-								<span class="ml-1 text-sm text-gray-400">(17)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel</h2>
-								<span class="ml-1 text-sm text-gray-400">(9)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Toshiba</h2>
-								<span class="ml-1 text-sm text-gray-400">(6)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Fujitsu</h2>
-								<span class="ml-1 text-sm text-gray-400">(5)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Gigabyte</h2>
-								<span class="ml-1 text-sm text-gray-400">(5)</span>
-							</div>
-						</div>
-
-						<!-- Tip laptop -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Tip laptop</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Home</h2>
-								<span class="ml-1 text-sm text-gray-400">(1023)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Business</h2>
-								<span class="ml-1 text-sm text-gray-400">(637)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Gaming</h2>
-								<span class="ml-1 text-sm text-gray-400">(612)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Ultraportabil</h2>
-								<span class="ml-1 text-sm text-gray-400">(511)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">2 in 1</h2>
-								<span class="ml-1 text-sm text-gray-400">(163)</span>
-							</div>
-						</div>
-
-						<!-- Producator procesor -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Producator procesor</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Intel®</h2>
-								<span class="ml-1 text-sm text-gray-400">(1945)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">AMD</h2>
-								<span class="ml-1 text-sm text-gray-400">(727)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Apple</h2>
-								<span class="ml-1 text-sm text-gray-400">(71)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Qualcomm</h2>
-								<span class="ml-1 text-sm text-gray-400">(2)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Microsoft</h2>
-								<span class="ml-1 text-sm text-gray-400">(2)</span>
-							</div>
-						</div>
-
-						<!-- Rating minim -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Rating minim</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">
-									<div>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-									</div>
-								</h2>
-								<span class="ml-1 text-sm text-gray-400">(319)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">
-									<div>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-									</div>
-								</h2>
-								<span class="ml-1 text-sm text-gray-400">(672)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">
-									<div>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-									</div>
-								</h2>
-								<span class="ml-1 text-sm text-gray-400">(752)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">
-									<div>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-									</div>
-								</h2>
-								<span class="ml-1 text-sm text-gray-400">(770)</span>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">
-									<div>
-										<i class="fas fa-star text-xs text-amber-400"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-										<i class="fas fa-star text-xs text-gray-300"></i>
-									</div>
-								</h2>
-								<span class="ml-1 text-sm text-gray-400">(782)</span>
-							</div>
-						</div>
-
-						<!-- Disponibil prin easybox -->
-						<div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
-							<div
-								class="flex items-center justify-between hover:cursor-pointer"
-							>
-								<h1 class="text-sm font-bold">Disponibil prin easybox</h1>
-								<i class="fa-solid fa-angle-up"></i>
-							</div>
-
-							<div class="mt-2 flex items-center hover:cursor-pointer">
-								<div class="h-4 w-4 rounded-sm border border-gray-300"></div>
-								<h2 class="ml-3 text-sm">Da</h2>
-								<span class="ml-1 text-sm text-gray-400">(2490)</span>
-							</div>
-						</div>
-					</section>
-
-					<!-- Main section -->
-
-					<section class="col-span-4 mr-10">
-						<!-- Header of the main saction -->
-						<div class="bg-white px-4 pt-1 pb-4">
-							<header
-								class="my-2 flex items-baseline border-b-2 border-gray-100 pb-4"
-							>
-								<h1 class="text-3xl font-normal">Laptopuri</h1>
-								<h2 class="ml-4 text-xl">2771 produse</h2>
-							</header>
-
-							<main class="my-2 border-b-2 border-gray-100 pb-4">
-								<h2 class="text-sm font-semibold">Alege Tip laptop</h2>
-								<div class="mt-2 flex">
-									<span
-										class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
-										>Home</span
-									>
-									<span
-										class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
-										>Business</span
-									>
-									<span
-										class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
-										>Gaming</span
-									>
-									<span
-										class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
-										>Ultraportabil</span
-									>
-									<span
-										class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
-										>2in1</span
-									>
-								</div>
-							</main>
-
-							<footer class="flex items-center justify-between">
-								<!-- Left row -->
-								<div class="mt-6 flex items-center text-xs">
-									<h3>Ordoneaza dupa:</h3>
-									<span class="mx-1 rounded-sm border p-2 hover:cursor-pointer"
-										>Cele mai populare
-										<i class="fa-solid fa-angle-down pl-2 pr-1"></i>
-									</span>
-
-									<h3 class="ml-2">Produse:</h3>
-									<span class="mx-1 rounded-sm border p-2 hover:cursor-pointer"
-										>60 pe pagina<i class="fa-solid fa-angle-down pl-2 pr-1"></i
-									></span>
-								</div>
-								<!-- Right row -->
-								<div class="mt-6 flex items-center text-xs">
-									<h3 class="mr-2">Tip afisare:</h3>
-									<!-- <i
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eMag Laptops</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/public/output.css" />
+  </head>
+  <body>
+    <div class="my-3">
+      <navbar class="mx-auto flex h-9 max-w-screen-2xl">
+        <!-- Emag Logo -->
+        <img class="w-36" src="/public/img/emag-icon.svg" />
+
+        <!-- Searchbar -->
+        <div class="relative w-7/12">
+          <input
+            class="mx-4 h-full w-full rounded-full border border-blue-400 px-4"
+            type="text"
+            placeholder="Incepe o noua cautare"
+          />
+          <i
+            class="text-l fas fa-search absolute bottom-2 right-0 text-blue-400 hover:cursor-pointer"
+          ></i>
+        </div>
+        <!-- User account -->
+        <div class="ml-10 flex items-center hover:cursor-pointer">
+          <img class="h-9 rounded-full" src="/public/img/profile-pic.jpg" />
+          <span class="ml-2">Contul meu</span>
+          <i class="fa-solid fa-sort-down ml-1 text-xs"></i>
+        </div>
+
+        <!-- Favorite menu -->
+        <div class="ml-8 flex items-center hover:cursor-pointer">
+          <i class="fa-regular fa-heart text-xl text-blue-400"></i>
+          <span class="ml-2">Favorite</span>
+          <i class="fa-solid fa-sort-down ml-1 text-xs"></i>
+        </div>
+
+        <!-- Cart menu -->
+        <div class="ml-8 flex items-center hover:cursor-pointer">
+          <!-- <i class="fa-brands fa-opencart text-blue-400 text-xl"></i> -->
+          <!-- <i class="fa-solid fa-cart-shopping text-blue-400 text-xl"></i> -->
+          <img src="/public/img/cartimg.jpg" />
+          <span class="ml-1">Cosul meu</span>
+          <i class="fa-solid fa-sort-down ml-1 text-xs"></i>
+        </div>
+      </navbar>
+
+      <!-- Secondary navbar -->
+      <navbar class="mx-auto flex max-w-screen-2xl">
+        <!-- Background gradient color -->
+        <div
+          class="absolute left-0 mt-4 h-10 w-full bg-gradient-to-r from-red-600 via-indigo-700 to-blue-500"
+        ></div>
+
+        <!-- Produse tab -->
+        <div
+          class="absolute mt-5 rounded-md bg-white py-1 hover:cursor-pointer"
+        >
+          <i class="fa-solid fa-bars pl-2 text-sm"></i>
+          <span class="p-2 font-semibold">Produse</span>
+        </div>
+        <!-- Genius tab -->
+        <div
+          class="absolute mt-5 ml-28 cursor-pointer rounded-full border-white py-1 hover:border"
+        >
+          <span class="p-2 text-xs text-white">Genius</span>
+        </div>
+        <!-- Necesare zi de zi tab -->
+        <div
+          class="absolute mt-5 ml-44 cursor-pointer rounded-full border-white py-1 hover:border"
+        >
+          <span class="p-2 text-xs text-white">Necesare zi de zi</span>
+        </div>
+        <!-- Card eMAG -->
+        <div
+          class="absolute mt-5 ml-72 cursor-pointer rounded-full border-white py-1 hover:border"
+        >
+          <span class="p-2 text-xs text-white">Card eMAG</span>
+        </div>
+        <!-- Resigilate -->
+        <div
+          class="absolute mt-5 ml-96 cursor-pointer rounded-full border-white py-1 hover:border"
+        >
+          <span class="p-2 text-xs text-white">Resigilate</span>
+        </div>
+        <!-- eMAG Help -->
+        <div
+          class="absolute right-60 mt-5 cursor-pointer rounded-full border-white py-1 hover:border"
+        >
+          <i class="fa-solid fa-headset pl-2 text-white"></i>
+          <span class="py-2 pl-1 pr-2 text-xs text-white">eMAG Help</span>
+        </div>
+      </navbar>
+
+      <!-- Main Page -->
+      <main class="mt-14 bg-gray-100 pt-5 pb-8">
+        <!-- Page header -->
+        <header class="mx-auto max-w-screen-2xl">
+          <ol class="flex">
+            <li class="text-xs text-blue-700">Laptop, Tablete & Telefoane /</li>
+            <li class="ml-1 text-xs text-blue-700">Laptopuri si accesorii /</li>
+            <li class="ml-1 text-xs text-gray-600">Laptopuri</li>
+          </ol>
+        </header>
+
+        <div class="mx-auto mt-5 grid max-w-screen-2xl grid-cols-5">
+          <!-- Left section -->
+          <section class="mr-4">
+            <!-- Categorii -->
+            <div class="bg-sky-50 py-4">
+              <h2 class="pl-3 font-semibold text-sky-600 hover:cursor-pointer">
+                Categorii
+              </h2>
+              <h3
+                class="pt-4 pl-5 text-sm font-semibold text-sky-600 hover:cursor-pointer"
+              >
+                Laptop / Notebook
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Genti laptop
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Docking stations
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Standuri/Coolere notebook
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Hard disk-uri notebook
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Memorii Notebook
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Incarcatoare laptop
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Alte accesorii Laptop
+              </h3>
+              <h3 class="pt-1 pl-5 text-sm text-sky-600 hover:cursor-pointer">
+                Resigilate
+              </h3>
+            </div>
+
+            <!-- eMAG Genius -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <h1 class="text-sm font-bold">eMAG Genius</h1>
+                  <div
+                    class="ml-2 rounded-full bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-sm font-semibold text-white"
+                  >
+                    genius
+                  </div>
+                </div>
+                <div>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+              </div>
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Livrare gratuita</h2>
+              </div>
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Livrare gratuita maine</h2>
+              </div>
+              <div class="mr-4 border-b-2"></div>
+              <div
+                class="mt-3 flex items-center text-sm text-sky-600 hover:cursor-pointer"
+              >
+                <i class="fa-solid fa-angles-right mr-1 text-xs"></i>
+                <h2 class="text-sm">Incearca Genius gratuit</h2>
+              </div>
+            </div>
+
+            <!-- Tip procesor -->
+            <div
+              class="mt-4 h-72 overflow-y-scroll bg-white pb-2 pl-4 pt-3 pr-4"
+            >
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Tip procesor</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <input
+                class="mt-2 w-full rounded-sm border p-2 text-xs"
+                type="text"
+                placeholder="Cauta..."
+              />
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Celeron®</h2>
+                <span class="ml-1 text-sm text-gray-400">(102)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Pentium®</h2>
+                <span class="ml-1 text-sm text-gray-400">(39)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Core™ i3</h2>
+                <span class="ml-1 text-sm text-gray-400">(187)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Core™ i5</h2>
+                <span class="ml-1 text-sm text-gray-400">(741)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Core™ i7</h2>
+                <span class="ml-1 text-sm text-gray-400">(707)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Core™ i9</h2>
+                <span class="ml-1 text-sm text-gray-400">(70)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel® Xeon®</h2>
+                <span class="ml-1 text-sm text-gray-400">(4)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD Athlon™</h2>
+                <span class="ml-1 text-sm text-gray-400">(23)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD A4-Series</h2>
+                <span class="ml-1 text-sm text-gray-400">(6)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD A9-Series</h2>
+                <span class="ml-1 text-sm text-gray-400">(1)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD Ryzen™ 3</h2>
+                <span class="ml-1 text-sm text-gray-400">(108)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD Ryzen™ 5</h2>
+                <span class="ml-1 text-sm text-gray-400">(253)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD Ryzen™ 7</h2>
+                <span class="ml-1 text-sm text-gray-400">(254)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD Ryzen™ 9</h2>
+                <span class="ml-1 text-sm text-gray-400">(57)</span>
+              </div>
+            </div>
+
+            <!-- Capacitate memorie -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Capacitate memorie</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Sub 4 GB</h2>
+                <span class="ml-1 text-sm text-gray-400">(1)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">4 GB</h2>
+                <span class="ml-1 text-sm text-gray-400">(201)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">6 - 8 GB</h2>
+                <span class="ml-1 text-sm text-gray-400">(1208)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">12 - 16 GB</h2>
+                <span class="ml-1 text-sm text-gray-400">(1091)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Peste 16 GB</h2>
+                <span class="ml-1 text-sm text-gray-400">(209)</span>
+              </div>
+            </div>
+            <!-- Brand -->
+            <div
+              class="mt-4 h-72 overflow-y-scroll bg-white pb-2 pl-4 pt-3 pr-4"
+            >
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Brand</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <input
+                class="mt-2 w-full rounded-sm border p-2 text-xs"
+                type="text"
+                placeholder="Cauta..."
+              />
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Lenovo</h2>
+                <span class="ml-1 text-sm text-gray-400">(586)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">HP</h2>
+                <span class="ml-1 text-sm text-gray-400">(495)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Dell</h2>
+                <span class="ml-1 text-sm text-gray-400">(487)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Asus</h2>
+                <span class="ml-1 text-sm text-gray-400">(360)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Acer</h2>
+                <span class="ml-1 text-sm text-gray-400">(259)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Apple</h2>
+                <span class="ml-1 text-sm text-gray-400">(99)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">MSI</h2>
+                <span class="ml-1 text-sm text-gray-400">(45)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Microsoft</h2>
+                <span class="ml-1 text-sm text-gray-400">(23)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">LG</h2>
+                <span class="ml-1 text-sm text-gray-400">(19)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Huawei</h2>
+                <span class="ml-1 text-sm text-gray-400">(17)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel</h2>
+                <span class="ml-1 text-sm text-gray-400">(9)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Toshiba</h2>
+                <span class="ml-1 text-sm text-gray-400">(6)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Fujitsu</h2>
+                <span class="ml-1 text-sm text-gray-400">(5)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Gigabyte</h2>
+                <span class="ml-1 text-sm text-gray-400">(5)</span>
+              </div>
+            </div>
+
+            <!-- Tip laptop -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Tip laptop</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Home</h2>
+                <span class="ml-1 text-sm text-gray-400">(1023)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Business</h2>
+                <span class="ml-1 text-sm text-gray-400">(637)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Gaming</h2>
+                <span class="ml-1 text-sm text-gray-400">(612)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Ultraportabil</h2>
+                <span class="ml-1 text-sm text-gray-400">(511)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">2 in 1</h2>
+                <span class="ml-1 text-sm text-gray-400">(163)</span>
+              </div>
+            </div>
+
+            <!-- Producator procesor -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Producator procesor</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Intel®</h2>
+                <span class="ml-1 text-sm text-gray-400">(1945)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">AMD</h2>
+                <span class="ml-1 text-sm text-gray-400">(727)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Apple</h2>
+                <span class="ml-1 text-sm text-gray-400">(71)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Qualcomm</h2>
+                <span class="ml-1 text-sm text-gray-400">(2)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Microsoft</h2>
+                <span class="ml-1 text-sm text-gray-400">(2)</span>
+              </div>
+            </div>
+
+            <!-- Rating minim -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Rating minim</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">
+                  <div>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                  </div>
+                </h2>
+                <span class="ml-1 text-sm text-gray-400">(319)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">
+                  <div>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                  </div>
+                </h2>
+                <span class="ml-1 text-sm text-gray-400">(672)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">
+                  <div>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                  </div>
+                </h2>
+                <span class="ml-1 text-sm text-gray-400">(752)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">
+                  <div>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                  </div>
+                </h2>
+                <span class="ml-1 text-sm text-gray-400">(770)</span>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">
+                  <div>
+                    <i class="fas fa-star text-xs text-amber-400"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                    <i class="fas fa-star text-xs text-gray-300"></i>
+                  </div>
+                </h2>
+                <span class="ml-1 text-sm text-gray-400">(782)</span>
+              </div>
+            </div>
+
+            <!-- Disponibil prin easybox -->
+            <div class="mt-4 bg-white pb-2 pl-4 pt-3 pr-4">
+              <div
+                class="flex items-center justify-between hover:cursor-pointer"
+              >
+                <h1 class="text-sm font-bold">Disponibil prin easybox</h1>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <div class="mt-2 flex items-center hover:cursor-pointer">
+                <div class="h-4 w-4 rounded-sm border border-gray-300"></div>
+                <h2 class="ml-3 text-sm">Da</h2>
+                <span class="ml-1 text-sm text-gray-400">(2490)</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Main section -->
+
+          <section class="col-span-4 mr-10">
+            <!-- Header of the main saction -->
+            <div class="bg-white px-4 pt-1 pb-4">
+              <header
+                class="my-2 flex items-baseline border-b-2 border-gray-100 pb-4"
+              >
+                <h1 class="text-3xl font-normal">Laptopuri</h1>
+                <h2 class="ml-4 text-xl">2771 produse</h2>
+              </header>
+
+              <main class="my-2 border-b-2 border-gray-100 pb-4">
+                <h2 class="text-sm font-semibold">Alege Tip laptop</h2>
+                <div class="mt-2 flex">
+                  <span
+                    class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
+                    >Home</span
+                  >
+                  <span
+                    class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
+                    >Business</span
+                  >
+                  <span
+                    class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
+                    >Gaming</span
+                  >
+                  <span
+                    class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
+                    >Ultraportabil</span
+                  >
+                  <span
+                    class="m-1 rounded-full border px-6 py-1 hover:cursor-pointer"
+                    >2in1</span
+                  >
+                </div>
+              </main>
+
+              <footer class="flex items-center justify-between">
+                <!-- Left row -->
+                <div class="mt-6 flex items-center text-xs">
+                  <h3>Ordoneaza dupa:</h3>
+                  <span class="mx-1 rounded-sm border p-2 hover:cursor-pointer"
+                    >Cele mai populare
+                    <i class="fa-solid fa-angle-down pl-2 pr-1"></i>
+                  </span>
+
+                  <h3 class="ml-2">Produse:</h3>
+                  <span class="mx-1 rounded-sm border p-2 hover:cursor-pointer"
+                    >60 pe pagina<i class="fa-solid fa-angle-down pl-2 pr-1"></i
+                  ></span>
+                </div>
+                <!-- Right row -->
+                <div class="mt-6 flex items-center text-xs">
+                  <h3 class="mr-2">Tip afisare:</h3>
+                  <!-- <i
 												  class="fas fa-bars border p-2 border-gray-400 rounded-sm"
 											  ></i> -->
-									<!-- <i class="fa-solid fa-grid-2"></i> -->
-									<svg
-										class="h-8 w-8 rounded-l-md border p-1 hover:cursor-pointer"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M4 6h16M4 10h16M4 14h16M4 18h16"
-										></path>
-									</svg>
+                  <!-- <i class="fa-solid fa-grid-2"></i> -->
+                  <svg
+                    class="h-8 w-8 rounded-l-md border p-1 hover:cursor-pointer"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                    ></path>
+                  </svg>
 
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-8 w-8 rounded-r-md border bg-gray-200 p-1 hover:cursor-pointer"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-										/>
-									</svg>
-								</div>
-							</footer>
-						</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 rounded-r-md border bg-gray-200 p-1 hover:cursor-pointer"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                    />
+                  </svg>
+                </div>
+              </footer>
+            </div>
 
-						<!-- Cards -->
-						<div class="mt-3 grid grid-cols-4">
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/lenovo-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
-									15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
-									Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">3.98</span>
-									<span class="text-xs text-gray-400">(7)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									2.149<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+            <!-- Cards -->
+            <div class="mt-3 grid grid-cols-4">
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/lenovo-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
+                  15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
+                  Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">3.98</span>
+                  <span class="text-xs text-gray-400">(7)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  2.149<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/acer-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
-									procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
-									Intel® UHD Graphics, No OS, Blue
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">4.01</span>
-									<span class="text-xs text-gray-400">(11)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.249
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									1.739<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/acer-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
+                  procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
+                  Intel® UHD Graphics, No OS, Blue
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">4.01</span>
+                  <span class="text-xs text-gray-400">(11)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.249
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  1.739<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/asus-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
-									N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
-									OS, Star Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">4.96</span>
-									<span class="text-xs text-gray-400">(17)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 3.579
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									3.129<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/asus-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
+                  N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
+                  OS, Star Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">4.96</span>
+                  <span class="text-xs text-gray-400">(17)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 3.579
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  3.129<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/rog.png" />
-								<!-- Product title -->
-								<h2 class="mx-2 mt-2 text-sm font-medium">
-									Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
-									7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
-									GeForce RTX™ 3050 4GB
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">5</span>
-									<span class="text-xs text-gray-400">(5)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 8.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									7.249<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/rog.png" />
+                <!-- Product title -->
+                <h2 class="mx-2 mt-2 text-sm font-medium">
+                  Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
+                  7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
+                  GeForce RTX™ 3050 4GB
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">5</span>
+                  <span class="text-xs text-gray-400">(5)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 8.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  7.249<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
-						</div>
-						<div class="mt-3 grid grid-cols-4">
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/lenovo-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
-									15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
-									Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">3.98</span>
-									<span class="text-xs text-gray-400">(7)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									2.149<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 grid grid-cols-4">
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/lenovo-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
+                  15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
+                  Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">3.98</span>
+                  <span class="text-xs text-gray-400">(7)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  2.149<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/acer-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
-									procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
-									Intel® UHD Graphics, No OS, Blue
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">4.01</span>
-									<span class="text-xs text-gray-400">(11)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.249
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									1.739<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/acer-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
+                  procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
+                  Intel® UHD Graphics, No OS, Blue
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">4.01</span>
+                  <span class="text-xs text-gray-400">(11)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.249
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  1.739<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/asus-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
-									N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
-									OS, Star Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">4.96</span>
-									<span class="text-xs text-gray-400">(17)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 3.579
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									3.129<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/asus-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
+                  N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
+                  OS, Star Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">4.96</span>
+                  <span class="text-xs text-gray-400">(17)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 3.579
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  3.129<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/rog.png" />
-								<!-- Product title -->
-								<h2 class="mx-2 mt-2 text-sm font-medium">
-									Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
-									7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
-									GeForce RTX™ 3050 4GB
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">5</span>
-									<span class="text-xs text-gray-400">(5)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 8.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									7.249<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/rog.png" />
+                <!-- Product title -->
+                <h2 class="mx-2 mt-2 text-sm font-medium">
+                  Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
+                  7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
+                  GeForce RTX™ 3050 4GB
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">5</span>
+                  <span class="text-xs text-gray-400">(5)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 8.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  7.249<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
-						</div>
-						<div class="mt-3 grid grid-cols-4">
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/lenovo-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
-									15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
-									Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">3.98</span>
-									<span class="text-xs text-gray-400">(7)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									2.149<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 grid grid-cols-4">
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/lenovo-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Lenovo V15 G2 ITL with processor Intel Core i3-1115G4,
+                  15.6", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, No OS,
+                  Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">3.98</span>
+                  <span class="text-xs text-gray-400">(7)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  2.149<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/acer-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
-									procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
-									Intel® UHD Graphics, No OS, Blue
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-gray-300"></i>
-									<span class="text-xs">4.01</span>
-									<span class="text-xs text-gray-400">(11)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 2.249
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									1.739<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/acer-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop Acer Enduro Urban N3 MIL-STD 810H EUN314A-51W cu
+                  procesor Intel® Core™ i3-1115G4, 14",Full HD, 8GB, 256GB SSD,
+                  Intel® UHD Graphics, No OS, Blue
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-gray-300"></i>
+                  <span class="text-xs">4.01</span>
+                  <span class="text-xs text-gray-400">(11)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 2.249
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  1.739<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/asus-laptop.webp" />
-								<!-- Product title -->
-								<h2 class="m-2 text-sm font-medium">
-									Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
-									N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
-									OS, Star Black
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">4.96</span>
-									<span class="text-xs text-gray-400">(17)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 3.579
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									3.129<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/asus-laptop.webp" />
+                <!-- Product title -->
+                <h2 class="m-2 text-sm font-medium">
+                  Laptop ultraportabil ASUS E410KA cu procesor Intel® Celeron®
+                  N4500, 14", Full HD, 4GB, 256GB SSD, Intel® HD Graphics, No
+                  OS, Star Black
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">4.96</span>
+                  <span class="text-xs text-gray-400">(17)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 3.579
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  3.129<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
 
-							<div
-								class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
-							>
-								<!-- Genius mark -->
-								<div
-									class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
-								>
-									genius
-								</div>
-								<!-- Heart -->
-								<i
-									class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Square -->
-								<i
-									class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
-								></i>
-								<!-- Product image -->
-								<img src="/public/img/rog.png" />
-								<!-- Product title -->
-								<h2 class="mx-2 mt-2 text-sm font-medium">
-									Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
-									7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
-									GeForce RTX™ 3050 4GB
-								</h2>
-								<!-- Stars -->
-								<div>
-									<i class="fas fa-star ml-2 text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<i class="fas fa-star text-sm text-amber-400"></i>
-									<span class="text-xs">5</span>
-									<span class="text-xs text-gray-400">(5)</span>
-								</div>
-								<!-- Stock -->
-								<div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
-									in stoc
-								</div>
-								<!-- PRP -->
-								<div class="ml-2 mt-2 text-sm text-gray-400">
-									PRP: 8.549
-									<span class="text-micro -ml-1 align-top leading-4">99</span>
-									Lei
-								</div>
-								<!-- Price -->
-								<div class="ml-2 -mt-1 font-bold text-rose-500">
-									7.249<span class="text-micro align-top leading-5">99</span>
-									Lei
-								</div>
-								<!-- Add to cart -->
-								<div>
-									<!-- Add to cart text and blue bar -->
-									<div class="flex h-8">
-										<div
-											class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
-										>
-											<div
-												class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
-											>
-												Adauga in cos
-											</div>
-										</div>
+              <div
+                class="card relative mr-4 bg-white pb-4 transition duration-150 ease-linear hover:cursor-pointer hover:shadow-xl"
+              >
+                <!-- Genius mark -->
+                <div
+                  class="mt-4 w-14 rounded-sm bg-gradient-to-r from-blue-900 to-red-500 px-2 pb-1 text-xs font-semibold text-white"
+                >
+                  genius
+                </div>
+                <!-- Heart -->
+                <i
+                  class="fa-regular fa-heart absolute right-0 mr-4 -mt-5 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Square -->
+                <i
+                  class="far fa-square absolute right-0 mr-4 mt-2 h-6 w-6 rounded-full bg-white text-center"
+                ></i>
+                <!-- Product image -->
+                <img src="/public/img/rog.png" />
+                <!-- Product title -->
+                <h2 class="mx-2 mt-2 text-sm font-medium">
+                  Laptop Gaming ASUS ROG Strix G15 G513IC cu procesor AMD Ryzen™
+                  7 4800H, 15.6", Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA®
+                  GeForce RTX™ 3050 4GB
+                </h2>
+                <!-- Stars -->
+                <div>
+                  <i class="fas fa-star ml-2 text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <i class="fas fa-star text-sm text-amber-400"></i>
+                  <span class="text-xs">5</span>
+                  <span class="text-xs text-gray-400">(5)</span>
+                </div>
+                <!-- Stock -->
+                <div class="ml-2 mt-5 text-xs font-semibold text-gray-400">
+                  in stoc
+                </div>
+                <!-- PRP -->
+                <div class="ml-2 mt-2 text-sm text-gray-400">
+                  PRP: 8.549
+                  <span class="text-micro -ml-1 align-top leading-4">99</span>
+                  Lei
+                </div>
+                <!-- Price -->
+                <div class="ml-2 -mt-1 font-bold text-rose-500">
+                  7.249<span class="text-micro align-top leading-5">99</span>
+                  Lei
+                </div>
+                <!-- Add to cart -->
+                <div>
+                  <!-- Add to cart text and blue bar -->
+                  <div class="flex h-8">
+                    <div
+                      class="m-2 h-8 w-full rounded-md bg-gradient-to-r from-blue-700 to-blue-400"
+                    >
+                      <div
+                        class="flex h-8 items-center justify-center pl-6 text-sm font-thin text-white"
+                      >
+                        Adauga in cos
+                      </div>
+                    </div>
 
-										<div
-											class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
-										></div>
-									</div>
-									<!-- Cart img -->
-									<i
-										class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
-									></i>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</main>
-			<footer class="bg-gray-100">
-				<section class="bg-white shadow-sm py-6">
-					<div
-						class="max-w-screen-2xl mx-auto flex justify-between items-center"
-					>
-						<div>
-							<h2 class="font-bold">Descarca aplicatia eMAG</h2>
-							<p class="mt-4 text-xs">
-								Lasa-ne numarul tau de telefon si iti vom trimite link-ul de
-								download.
-							</p>
-						</div>
-						<div class="flex">
-							<input
-								class="h-10 rounded-sm border text-sm pl-4 pr-52"
-								type="text"
-								placeholder="07xxxxxxxx"
-							/>
-							<button
-								class="w-full h-10 bg-blue-600 text-white rounded-sm px-3 hover:bg-blue-800"
-							>
-								Trimite SMS
-							</button>
-						</div>
-						<div class="flex h-10">
-							<img
-								class="mr-4 hover:cursor-pointer"
-								src="/public/img/google-play-badge.svg"
-							/>
-							<img
-								class="mr-12 hover:cursor-pointer"
-								src="/public/img/apple-store-badge.svg"
-							/>
-						</div>
-					</div>
-				</section>
-				<section class="bg-white mt-2 pt-6">
-					<div class="max-w-screen-2xl mx-auto">
-						<h2 class="font-bold">Intrebari Frecvente Laptopuri</h2>
-						<div class="ml-2">
-							<div
-								class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100"
-							>
-								<div class="font-semibold text-sm">Laptop vs Macbook?</div>
-								<i class="fa-solid fa-angle-down"></i>
-							</div>
-							<div
-								class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100"
-							>
-								<div class="font-semibold text-sm">
-									Cat costa un laptop bun?
-								</div>
-								<i class="fa-solid fa-angle-down"></i>
-							</div>
-							<div
-								class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100"
-							>
-								<div class="font-semibold text-sm">Top Laptopuri Business?</div>
-								<i class="fa-solid fa-angle-down"></i>
-							</div>
-							<div
-								class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100"
-							>
-								<div class="font-semibold text-sm">
-									Ce trebuie sa aiba un laptop bun?
-								</div>
-								<i class="fa-solid fa-angle-down"></i>
-							</div>
-							<div class="flex justify-between items-center mt-6 pb-4 mr-16">
-								<div class="font-semibold text-sm">Cum sa alegi un laptop?</div>
-								<i class="fa-solid fa-angle-down"></i>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="bg-blue-100 border-t-2 border-b-gray-100">
-					<div class="max-w-screen-2xl mx-auto py-4 grid grid-cols-4 gap-4">
-						<div>
-							<div class="text-lg text-blue-800">Servicii pentru clienti</div>
-							<div class="text-xs mt-4 text-gray-400 space-y-3">
-								<p>Deschiderea coletului la livrare</p>
-								<p>30 de zile drept de retur</p>
-								<p>Plata cu cardul in rate fara dobanda</p>
-								<p>Finantare in rate prin eCREDIT</p>
-								<p>Garantii si service</p>
-								<p>Black Friday eMAG</p>
-								<div class="flex items-center">
-									<img class="h-5" src="/public/img/mastercard.svg" />
-									<img class="h-5" src="/public/img/maestro.svg" />
-									<img class="h-2" src="/public/img/visa.svg" />
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="text-lg text-blue-800">Comenzi si livrare</div>
-						</div>
-						<div>
-							<div class="text-lg text-blue-800">Suport clienti</div>
-						</div>
-						<div>
-							<div class="text-lg text-blue-800">eMAG.ro</div>
-						</div>
-					</div>
-				</section>
-			</footer>
-		</div>
-	</body>
+                    <div
+                      class="overlay absolute -my-1 h-12 w-12 rounded-b-full bg-gradient-to-r from-red-900 to-red-600 mix-blend-color"
+                    ></div>
+                  </div>
+                  <!-- Cart img -->
+                  <i
+                    class="fa-solid fa-cart-shopping absolute -mt-5 ml-4 text-lg text-white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Page footer -->
+      <footer class="bg-gray-100">
+        <!-- First section of the footer -->
+        <section class="bg-white shadow-sm py-6">
+          <div
+            class="max-w-screen-2xl mx-auto flex justify-between items-center"
+          >
+            <div>
+              <h2 class="font-bold">Descarca aplicatia eMAG</h2>
+              <p class="mt-4 text-xs">
+                Lasa-ne numarul tau de telefon si iti vom trimite link-ul de
+                download.
+              </p>
+            </div>
+            <div class="flex">
+              <input
+                class="h-10 rounded-sm border text-sm pl-4 pr-52"
+                type="text"
+                placeholder="07xxxxxxxx"
+              />
+              <button
+                class="w-full h-10 bg-blue-600 text-white rounded-sm px-3 hover:bg-blue-800"
+              >
+                Trimite SMS
+              </button>
+            </div>
+            <div class="flex h-10">
+              <img
+                class="mr-4 hover:cursor-pointer"
+                src="/public/img/google-play-badge.svg"
+              />
+              <img
+                class="mr-12 hover:cursor-pointer"
+                src="/public/img/apple-store-badge.svg"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Second section of the footer -->
+        <section class="bg-white mt-2 pt-6">
+          <div class="max-w-screen-2xl mx-auto">
+            <h2 class="font-bold">Intrebari Frecvente Laptopuri</h2>
+            <div class="ml-2">
+              <div
+                class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100 hover:cursor-pointer"
+              >
+                <div class="font-semibold text-sm">Laptop vs Macbook?</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div
+                class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100 hover:cursor-pointer"
+              >
+                <div class="font-semibold text-sm">
+                  Cat costa un laptop bun?
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div
+                class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100 hover:cursor-pointer"
+              >
+                <div class="font-semibold text-sm">Top Laptopuri Business?</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div
+                class="flex justify-between items-center border-b-2 my-6 pb-4 mr-16 border-b-gray-100 hover:cursor-pointer"
+              >
+                <div class="font-semibold text-sm">
+                  Ce trebuie sa aiba un laptop bun?
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div
+                class="flex justify-between items-center mt-6 pb-4 mr-16 hover:cursor-pointer"
+              >
+                <div class="font-semibold text-sm">Cum sa alegi un laptop?</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-blue-100 border-t-2 border-b-gray-100 pb-2">
+          <div class="max-w-screen-2xl mx-auto py-4 grid grid-cols-4 gap-4">
+            <div>
+              <div class="text-lg text-blue-800">Servicii pentru clienti</div>
+              <div class="text-xs mt-4 text-gray-400 space-y-3">
+                <p class="hover:cursor-pointer">
+                  Deschiderea coletului la livrare
+                </p>
+                <p class="hover:cursor-pointer">30 de zile drept de retur</p>
+                <p class="hover:cursor-pointer">
+                  Plata cu cardul in rate fara dobanda
+                </p>
+                <p class="hover:cursor-pointer">
+                  Finantare in rate prin eCREDIT
+                </p>
+                <p class="hover:cursor-pointer">Garantii si service</p>
+                <p class="hover:cursor-pointer">Black Friday eMAG</p>
+                <div class="flex items-center">
+                  <img
+                    class="h-5 hover:cursor-pointer"
+                    src="/public/img/mastercard.svg"
+                  />
+                  <img
+                    class="h-5 hover:cursor-pointer"
+                    src="/public/img/maestro.svg"
+                  />
+                  <img
+                    class="h-2 hover:cursor-pointer"
+                    src="/public/img/visa.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-lg text-blue-800">Comenzi si livrare</div>
+              <div class="text-xs mt-4 text-gray-400 space-y-3">
+                <p class="hover:cursor-pointer">Contul meu la eMAG</p>
+                <p class="hover:cursor-pointer">Livrarea comenzilor</p>
+                <p class="hover:cursor-pointer">eMAG Corporate</p>
+                <p class="hover:cursor-pointer">eMAG Marketplace</p>
+                <p class="hover:cursor-pointer">
+                  Modalitati de finantare si plata
+                </p>
+                <p class="hover:cursor-pointer">Vreau sa vand pe eMAG</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-lg text-blue-800">Suport clienti</div>
+              <div class="text-xs mt-4 text-gray-400 space-y-3">
+                <p class="hover:cursor-pointer">Formular returnare produs</p>
+                <p class="hover:cursor-pointer">Contact</p>
+                <p class="hover:cursor-pointer">Anunturi rechemare produse</p>
+                <p class="hover:cursor-pointer">
+                  Conditii generale privind furnizarea serviciilor postale
+                </p>
+                <p class="hover:cursor-pointer">ANPC</p>
+                <p class="hover:cursor-pointer">ANPC - SAL</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-lg text-blue-800">eMAG.ro</div>
+              <div class="text-xs mt-4 text-gray-400 space-y-3">
+                <p class="hover:cursor-pointer">Despre eMAG</p>
+                <p class="hover:cursor-pointer">Termene si conditii</p>
+                <p class="hover:cursor-pointer">
+                  Prelucrarea datelor cu caracter personal
+                </p>
+                <p class="hover:cursor-pointer">
+                  Politica de utilizare Cookie-uri
+                </p>
+                <p class="hover:cursor-pointer">
+                  Solutionarea Online a litigiilor
+                </p>
+                <p class="hover:cursor-pointer">
+                  Programele Fundatiei Noua ne pasa
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-blue-100 border-t-2 border-b-gray-100 pt-4 pb-8">
+          <div
+            class="max-w-screen-2xl mx-auto flex justify-between items-center"
+          >
+            <div class="text-gray-400">
+              <div class="text-xs mb-1">
+                Copyright © 2001-2022 Dante International, CUI: 14399840, Reg.
+                Com. J40/372/2002
+              </div>
+              <div class="hover:cursor-pointer">Varianta mobile</div>
+            </div>
+            <div class="space-x-8 text-blue-800 text-xl">
+              <i class="fa-brands fa-facebook-f hover:cursor-pointer"></i>
+              <i class="fa-brands fa-twitter hover:cursor-pointer"></i>
+              <i class="fa-brands fa-youtube hover:cursor-pointer"></i>
+            </div>
+            <div class="flex items-center text-gray-400 pl-20">
+              <div class="flex items-center mx-4 hover:cursor-pointer">
+                <img class="h-6" src="/public/img/bg-flag.ico" />emag.bg
+              </div>
+              <div class="flex items-center mx-4 hover:cursor-pointer">
+                <img class="h-5" src="/public/img/hu-flag.png" />emag.hu
+              </div>
+              <div class="mx-4 mr-14 hover:cursor-pointer">
+                <img
+                  class="h-9"
+                  src="/public/img/badge-partener-strategic.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
