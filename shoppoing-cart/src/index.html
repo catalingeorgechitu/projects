@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="/public/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-  </head>
-  <body class="font-body bg-slate-100">
-    <div class="max-w-screen-xl mx-auto flex mt-24">
-      <section class="left-section w-full">
-        <div class="text-3xl font-bold">
-          <div>
-            <div class="product-item flex">
-              <div class="item-title w-full">Paine</div>
-              <div
-                class="border border-2 border-slate-800 rounded-md h-8 w-16 mr-2"
-              >
-                <i class="fas fa-minus"></i>
-              </div>
-              <p>x</p>
-              <div class="item-quantity">3</div>
-              <span>+</span>
-              <div class="item-value w-full ml-12">5.58</div>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shopping Cart</title>
+		<link rel="stylesheet" href="/public/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+	</head>
+	<body class="font-body bg-slate-100">
+		<div class="max-w-screen-xl mx-auto flex mt-24">
+			<section class="left-section w-full">
+				<div class="text-3xl font-bold">
+					<div class="flex justify-between mx-6 mb-4">
+						<div class="font-extrabold text-slate-600 text-4xl">PRODUSE</div>
+						<div class="font-extrabold mr-6 text-slate-600 text-4xl">RON</div>
+					</div>
+					<div
+						class="product-container border-2 h-container py-2 border-slate-400"
+					>
+						<div class="product-line flex mx-6 my-2">
+							<div class="product-title w-7/12">Paine</div>
+							<div
+								class="border border-2 border-slate-800 rounded-md h-8 w-8 mr-2 hover:bg-slate-900 hover:text-white transition duration-100 hover:cursor-pointer"
+							>
+								<i class="fas fa-minus"></i>
+							</div>
+							<p>x</p>
+							<div class="product-quantity">3</div>
+							<div
+								class="border border-2 border-slate-800 rounded-md h-8 w-8 ml-2 hover:bg-slate-900 hover:text-white transition duration-100 hover:cursor-pointer"
+							>
+								<i class="fas fa-plus"></i>
+							</div>
+							<div class="product-value w-2/12 ml-12">5.58</div>
+						</div>
 
-            <div class="product-item flex">
-              <div class="item-title w-full">Apa plata</div>
-              <div
-                class="border border-2 border-slate-800 rounded-md h-8 w-16 mr-2"
-              >
-                <i class="fas fa-minus"></i>
-              </div>
-              <p>x</p>
-              <div class="item-quantity">6</div>
-              <span>+</span>
-              <div class="item-value w-full ml-12">18.22</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="right-section w-full"></section>
-    </div>
-  </body>
+						<div class="product-line flex mx-6 my-2">
+							<div class="product-title w-7/12">Apa plata</div>
+							<div
+								class="border border-2 border-slate-800 rounded-md h-8 w-8 mr-2 hover:bg-slate-900 hover:text-white transition duration-100 hover:cursor-pointer"
+							>
+								<i class="fas fa-minus"></i>
+							</div>
+							<p>x</p>
+							<div class="product-quantity">6</div>
+							<div
+								class="border border-2 border-slate-800 rounded-md h-8 w-8 ml-2 hover:bg-slate-900 hover:text-white transition duration-100 hover:cursor-pointer"
+							>
+								<i class="fas fa-plus"></i>
+							</div>
+							<div class="product-value w-2/12 ml-12">18.22</div>
+						</div>
+					</div>
+					<div class="flex justify-between mx-6 mt-4">
+						<div class="font-extrabold text-slate-600 text-4xl">TOTAL</div>
+						<div class="font-extrabold text-slate-600 text-4xl">30.20</div>
+					</div>
+					<div class="w-full flex justify-center">
+						<button
+							class="mt-2 border-2 rounded-md border-slate-400 bg-slate-600 text-white p-4"
+						>
+							PLATESTE
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="right-section w-full">
+				<div
+					class="text-3xl font-bold grid grid-cols-2 gap-4 ml-40 mt-4 text-slate-800"
+				>
+					<article class="Apa hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/apa.jpg"
+							alt="Apa"
+						/>
+						<h2 class="text-center text-2xl">Apa plata</h2>
+						<h3 class="text-center text-xl">3.10 Lei</h3>
+					</article>
+					<article class="Paine hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/paine.jpg"
+							alt="Paine"
+						/>
+						<h2 class="text-center text-2xl">Paine</h2>
+						<h3 class="text-center text-xl">2.56 Lei</h3>
+					</article>
+					<article class="Faina hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/faina.jpg"
+							alt="Faina"
+						/>
+						<h2 class="text-center text-2xl">Faina alba</h2>
+						<h3 class="text-center text-xl">4.99 Lei</h3>
+					</article>
+					<article class="Ulei hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/ulei.jpg"
+							alt="Ulei"
+						/>
+						<h2 class="text-center text-2xl">Ulei floarea soarelui</h2>
+						<h3 class="text-center text-xl">11.59 Lei</h3>
+					</article>
+					<article class="Iaurt hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/iaurt.jpg"
+							alt="Iaurt"
+						/>
+						<h2 class="text-center text-2xl">Iaurt natural</h2>
+						<h3 class="text-center text-xl">3.59 Lei</h3>
+					</article>
+					<article class="Orez hover:cursor-pointer">
+						<img
+							class="w-44 h-44 border-2 rounded-lg mx-auto"
+							src="/public/img/orez.jpg"
+							alt="Orez"
+						/>
+						<h2 class="text-center text-2xl">Orez</h2>
+						<h3 class="text-center text-xl">5.99 Lei</h3>
+					</article>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
