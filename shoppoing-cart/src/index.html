@@ -24,7 +24,8 @@
 					<div
 						class="cart-container h-container border-2 border-slate-400 py-2"
 					>
-						<div class="cart-row mx-6 my-2 flex">
+						<!-- Cart row template -->
+						<!-- <div class="cart-row mx-6 my-2 flex">
 							<div class="cart-title w-7/12">Paine</div>
 							<div
 								class="item-substract mr-2 flex h-8 w-8 items-center justify-center rounded-md border border-slate-800 transition duration-100 hover:cursor-pointer hover:bg-slate-900 hover:text-white"
@@ -40,25 +41,8 @@
 							</div>
 							<div class="item-price hidden">2.56</div>
 							<div class="cart-price ml-12 w-2/12">5.58</div>
-						</div>
-
-						<div class="cart-row mx-6 my-2 flex">
-							<div class="cart-title w-7/12">Apa plata</div>
-							<div
-								class="item-substract mr-2 flex h-8 w-8 items-center justify-center rounded-md border border-slate-800 transition duration-100 hover:cursor-pointer hover:bg-slate-900 hover:text-white"
-							>
-								<i class="fas fa-minus"></i>
-							</div>
-							<p>x</p>
-							<div class="cart-quantity">6</div>
-							<div
-								class="item-add ml-2 flex h-8 w-8 items-center justify-center rounded-md border border-slate-800 transition duration-100 hover:cursor-pointer hover:bg-slate-900 hover:text-white"
-							>
-								<i class="fas fa-plus"></i>
-							</div>
-							<div class="item-price hidden">3.10</div>
-							<div class="cart-price ml-12 w-2/12">18.22</div>
-						</div>
+						</div>-->
+						<!-- Cart row template -->
 					</div>
 					<div class="mx-6 mt-4 flex justify-between">
 						<div class="text-4xl font-extrabold text-slate-600">TOTAL</div>
@@ -68,7 +52,8 @@
 					</div>
 					<div class="flex w-full justify-center">
 						<button
-							class="mt-2 rounded-md border-2 border-slate-400 bg-slate-600 p-4 text-white hover:border-slate-800 hover:bg-slate-500 hover:shadow-lg"
+							onclick="payNow()"
+							class="pay mt-2 rounded-md border-2 border-slate-400 bg-slate-600 p-4 text-white hover:border-slate-800 hover:bg-slate-500 hover:shadow-lg"
 						>
 							PLATESTE
 						</button>

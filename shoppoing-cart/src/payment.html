@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cash register</title>
+		<link rel="stylesheet" href="/public/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<script defer src="/src/main.js"></script>
+		<script defer src="/src/payment.js"></script>
+	</head>
+	<body class="font-body bg-slate-100">
+		<div class="mx-auto mt-24 max-w-screen-xl">
+			<button
+				onClick="backButton()"
+				class="mb-4 text-2xl rounded-md border-2 border-slate-400 bg-slate-600 p-2 text-white hover:border-slate-800 hover:bg-slate-500 hover:shadow-lg"
+			>
+				< Inapoi la cos
+			</button>
+			<!-- Money container -->
+			<div class="money-container flex items-center gap-4">
+				<div class="money hover:cursor-pointer">
+					<img src="/public/img/100lei.jpg" alt="100 lei" />
+					<div class="value hidden">100</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img src="/public/img/50lei.jpg" alt="50 lei" />
+					<div class="value hidden">50</div>
+				</div>
+
+				<div class="money hover:cursor-pointer">
+					<img src="/public/img/10lei.jpg" alt="10 lei" />
+					<div class="value hidden">10</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img src="/public/img/5lei.jpg" alt="5 lei" />
+					<div class="value hidden">5</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img src="/public/img/1leu.jpg" alt="1 leu" />
+					<div class="value hidden">1</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img
+						class="rounded-full"
+						src="/public/img/50bani.jpg"
+						alt="50 bani"
+					/>
+					<div class="value hidden">0.5</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img
+						class="rounded-full"
+						src="/public/img/10bani.jpg"
+						alt="10 bani"
+					/>
+					<div class="value hidden">0.1</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img class="rounded-full" src="/public/img/5bani.jpg" alt="5 bani" />
+					<div class="value hidden">0.05</div>
+				</div>
+				<div class="money hover:cursor-pointer">
+					<img class="rounded-full" src="/public/img/1ban.jpg" alt="1 ban" />
+					<div class="value hidden">0.01</div>
+				</div>
+			</div>
+			<!-- Values container -->
+			<div class="ml-40">
+				<div class="text-4xl mt-24 font-extrabold text-slate-600">
+					Total de plata: <span class="total-output">0</span>
+					<span>Lei</span>
+				</div>
+				<div class="text-3xl mt-5 font-extrabold text-green-700">
+					Platit: <span class="paid-output">0</span>
+					<span>Lei</span>
+				</div>
+				<div class="text-3xl font-extrabold text-red-700">
+					Rest de plata: <span class="rest-output">0</span>
+					<span>Lei</span>
+				</div>
+				<div class="text-3xl font-extrabold text-blue-700">
+					Rest de incasat: <span class="receive-output">0</span>
+					<span>Lei</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
