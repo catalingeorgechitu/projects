@@ -13,7 +13,9 @@ const receiveOutput = document.getElementsByClassName('receive-output')[0];
 
 // Back button function
 function backButton() {
-	window.location.replace('http://127.0.0.1:5500/src/index.html');
+	window.location.replace(
+		window.location.href.replace('/src/payment', 'index')
+	);
 }
 
 // Loops through the selected money value

@@ -606,16 +606,13 @@ video {
   margin: 4rem;
 }
 
-.m-5{
-  margin: 1.25rem;
-}
-
 .m-auto{
   margin: auto;
 }
 
-.m-2{
-  margin: 0.5rem;
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto{
@@ -638,14 +635,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-4{
@@ -660,16 +651,8 @@ video {
   margin-top: 0.5rem;
 }
 
-.ml-14{
-  margin-left: 3.5rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .-ml-16{
@@ -704,16 +687,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mr-14{
-  margin-right: 3.5rem;
 }
 
 .block{
@@ -748,20 +723,12 @@ video {
   width: 20rem;
 }
 
-.min-w-0{
-  min-width: 0px;
-}
-
 .max-w-md{
   max-width: 28rem;
 }
 
 .max-w-screen-md{
   max-width: 768px;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
 }
 
 .appearance-none{
@@ -982,12 +949,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl{
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .drop-shadow-xl{
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1017,41 +978,10 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 640px){
-  .sm\:m-auto{
-    margin: auto;
-  }
-}
-
 @media (min-width: 768px){
-  .md\:m-0{
-    margin: 0px;
-  }
-
-  .md\:m-auto{
-    margin: auto;
-  }
-
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-  }
-
-  .md\:ml-14{
-    margin-left: 3.5rem;
-  }
-
-  .md\:ml-20{
-    margin-left: 5rem;
-  }
-
-  .md\:ml-10{
-    margin-left: 2.5rem;
   }
 
   .md\:flex{

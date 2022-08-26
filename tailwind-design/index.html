@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind project</title>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body class="font-body">
+		<div class="grid lg:grid-cols-6">
+			<!-- This is the root div -->
+
+			<div class="">
+				<!-- This is the navbar -->
+				<nav class="lg:text-right">
+					<div
+						class="flex items-center justify-between pl-5 pr-10 lg:justify-end lg:pl-0 lg:pr-0"
+					>
+						<h3
+							class="border-b border-gray-100 p-4 font-bold uppercase text-gray-500 hover:text-gray-800"
+						>
+							<a href="http://127.0.0.1:5500/index.html"> Cata's Food </a>
+						</h3>
+						<svg
+							id="menu-btn"
+							class="hover: h-6 h-7 w-6 cursor-pointer hover:w-7 lg:hidden"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</div>
+					<ul
+						id="menu-list"
+						class="hidden pr-10 text-right text-sm font-bold text-gray-400 lg:block lg:pt-10 lg:pr-0"
+					>
+						<li class="mt-1 border-r-4 border-red-400 pr-3 text-gray-600">
+							<a href="#">
+								<span class="pr-1">Home</span>
+								<svg
+									class="inline h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+									></path>
+								</svg>
+							</a>
+						</li>
+
+						<li class="mt-1 border-r-4 border-transparent pr-3">
+							<a href="#">
+								<span class="pr-1">About</span>
+								<svg
+									class="inline h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li class="mt-1 border-r-4 border-transparent pr-3">
+							<a href="#">
+								<span class="pr-1">Contact</span>
+								<svg
+									class="inline h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+									></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<main class="md:px-15 lg:px-30 bg-gray-100 px-10 pb-10 lg:col-span-5">
+				<!-- Main content -->
+				<div class="flex justify-center pt-6 lg:justify-end">
+					<!-- Login pannel -->
+					<div>
+						<button
+							class="btn border-blue-400 text-sm transition duration-500 ease-out lg:border-2 lg:text-xs"
+						>
+							Log in
+						</button>
+					</div>
+					<div>
+						<button
+							class="btn border-blue-400 text-sm transition duration-500 ease-out lg:ml-2 lg:border-2 lg:text-xs"
+						>
+							Sign up
+						</button>
+					</div>
+				</div>
+				<header>
+					<h2 class="text-3xl font-bold text-gray-600 lg:text-5xl">Recipes</h2>
+					<h3 class="pt-2 pl-1 text-sm font-bold text-gray-500 lg:text-xl">
+						For Followers
+					</h3>
+				</header>
+
+				<div class="pt-10">
+					<div>
+						<span class="text-sm font-bold text-gray-600">Most popular</span>
+					</div>
+					<div
+						class="grid gap-5 border-t border-gray-200 pt-6 lg:grid-cols-3 lg:gap-10"
+					>
+						<!-- Below goes the cards -->
+						<div class="card relative">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/ramen.jpg"
+								alt="Ramen"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Ramen with eggs
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">10 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/musaca.jpg"
+								alt="Musaca"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Moussaka with potatoes
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">60 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/souvlaki.jpg"
+								alt="Souvlaki"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Souvlaki with tomatoes
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">20 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pt-10">
+					<div>
+						<span class="text-sm font-bold text-gray-600">Latest recipes</span>
+					</div>
+					<div
+						class="grid gap-5 border-t border-gray-200 pt-6 lg:grid-cols-3 lg:gap-10"
+					>
+						<!-- Below goes the cards -->
+						<div class="card">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/ramen.jpg"
+								alt="Ramen"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Ramen with eggs
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">10 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/musaca.jpg"
+								alt="Musaca"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Moussaka with potatoes
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">60 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								class="h-60 w-full object-fill"
+								src="/public/img/souvlaki.jpg"
+								alt="Souvlaki"
+							/>
+							<div class="px-5 py-3">
+								<span class="text-medium block font-bold text-gray-500">
+									Souvlaki with tomatoes
+								</span>
+								<span class="text-sm text-gray-400"> Recipe by Catalin </span>
+							</div>
+							<div
+								class="absolute top-0 m-2 flex items-center rounded-full border-4 bg-gray-200 p-1 text-sm font-bold uppercase text-gray-500"
+							>
+								<span class="items-center pr-1 text-sm">20 min</span>
+								<svg
+									class="h-5 w-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-8 text-center">
+					<span
+						class="transform cursor-pointer rounded-2xl bg-gray-300 p-3 text-xs font-bold uppercase shadow-md duration-200 ease-out hover:text-sm hover:shadow-lg"
+						>Load more...</span
+					>
+				</div>
+			</main>
+		</div>
+
+		<script src="/src/main.js"></script>
+	</body>
+</html>

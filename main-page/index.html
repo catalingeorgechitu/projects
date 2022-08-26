@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main Page</title>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body class="font-body bg-gray-100 max-w-screen-2xl mx-auto">
+		<!-- This is the root div -->
+		<div class="px-5 lg:px-42 pt-5">
+			<!-- Navbar & Logo -->
+			<section class="flex justify-between items-center">
+				<div>
+					<img
+						class="ml-10 mt-0 p-0 w-16 h-14 hover:scale-105 hover:cursor-pointer transform duration-300 hover:opacity-70"
+						src="/public/img/logo-main.png"
+						alt="Logo"
+					/>
+				</div>
+				<nav>
+					<ul class="lg:flex pr-40 hidden">
+						<li class="nav-btn px-5">about</li>
+						<li class="nav-btn px-5">portofolio</li>
+						<li class="nav-btn px-5">cv</li>
+						<li class="nav-btn px-5">contact</li>
+						<li class="nav-btn px-5">github</li>
+					</ul>
+				</nav>
+			</section>
+			<!-- This is the 1st page -->
+			<section>
+				<div class="relative">
+					<div
+						class="ball1 hover:cursor-pointer absolute w-32 h-32 md:w-48 md:h-48 lg:w-72 lg:h-72 bg-purple-300 rounded-full left-5 top-10 md:left-20 md:top-40 mix-blend-multiply opacity-70 blur-xl animate-blob"
+					></div>
+					<div
+						class="ball2 hover:cursor-pointer absolute w-32 h-32 md:w-48 md:h-48 lg:w-72 lg:h-72 bg-pink-300 rounded-full left-15 top-10 md:left-60 md:top-40 mix-blend-multiply opacity-70 blur-xl animate-blob animation-delay-4000"
+					></div>
+					<div
+						class="ball3 hover:cursor-pointer absolute w-32 h-32 md:w-48 md:h-48 lg:w-72 lg:h-72 bg-yellow-300 rounded-full left-10 top-5 md:left-40 md:top-20 mix-blend-multiply opacity-70 blur-xl animate-blob animation-delay-2000"
+					></div>
+				</div>
+				<div class="text-center p-4 md:p-10 lg:p-32">
+					<h1 class="text-2xl md:text-3xl lg:text-5xl font-bold">
+						Hi, I'm Catalin and I'm a Junior Front-end Developer
+					</h1>
+					<h2 class="text-xl md:text-2xl lg:text-3xl p-10">
+						I like to keep it simple...or do I?
+					</h2>
+				</div>
+			</section>
+			<section class="grid md:grid-cols-3 gap-4 mt-16">
+				<div class="font-bold text-3xl m-auto text-center">
+					Hmm...Have you tried clicking the spheres above?
+				</div>
+				<div>
+					<div class="wrapper w-40 h-40 lg:w-72 mx-auto">
+						<img
+							class="w-40 h-40 lg:w-72 lg:h-72 img-back rounded-full shadow-lg absolute transform duration-500"
+							src="/public/img/cartoon-me-2.png"
+						/>
+						<img
+							class="w-40 h-40 lg:w-72 lg:h-72 img-front rounded-full shadow-lg absolute hover:opacity-0 transform duration-500"
+							src="/public/img/cartoon-me.png"
+						/>
+					</div>
+				</div>
+				<div class="font-bold text-3xl m-auto text-center">
+					Or maybe you should keep scrolling...
+				</div>
+			</section>
+		</div>
+		<script src="./src/main.js"></script>
+	</body>
+</html>

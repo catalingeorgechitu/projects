@@ -141,8 +141,9 @@ function payNow() {
 	);
 	localStorage.setItem('cartPrice', total);
 	if (total > 0) {
-		window.location.replace('http://127.0.0.1:5500/src/payment.html');
+		window.location.replace(window.location.href.replace('index', '/src/payment'));
 	} else {
 		alert('Cosul tau de cumparaturi este gol');
 	}
 }
+

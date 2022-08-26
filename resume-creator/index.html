@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resume creator</title>
+		<script src="/src/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body
+		class="font-body bg-gradient-to-r bg-gradient-to-r from-indigo-50 via-yellow-50 to-green-50 mx-4"
+	>
+		<!-- Header/title of the page -->
+		<header id="header" class="text-center m-16">
+			<h1 class="font-bold text-5xl">Resume builder</h1>
+			<h2 class="text-gray-400 italic text-lg">Designed by Catalin</h2>
+		</header>
+
+		<!-- Here goes the fields -->
+		<div id="fields">
+			<div class="m-auto mb-10 drop-shadow-xl w-full max-w-md">
+				<img src="/public/template.jpg" alt="" />
+			</div>
+			<form class="md:flex justify-center">
+				<div class="w-full max-w-md mx-auto md:mx-10">
+					<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+						<fieldset class="mb-4">
+							<label
+								for="imgfield"
+								class="block text-gray-700 text-sm font-bold"
+								>Choose your Profile Picture:</label
+							>
+							<br />
+							<input
+								type="file"
+								name="imgfield"
+								id="imgfield"
+								class="inline-block align-baseline font-bold text-sm text-gray-500 hover:text-gray-800"
+							/>
+						</fieldset>
+						<fieldset class="mb-6">
+							<label
+								for="fname"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Name:</label
+							>
+							<input
+								type="text"
+								name="fname"
+								id="fname"
+								placeholder="John Thompson"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="profession"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Profession:</label
+							>
+							<input
+								type="text"
+								name="profession"
+								id="profession"
+								placeholder="Fashion Designer"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="summary"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Executive Summary:</label
+							>
+							<textarea
+								rows="6"
+								name="summary"
+								id="summary"
+								placeholder="Say something about yourself"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							></textarea>
+
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="expertise1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Skill 1:</label
+							>
+							<input
+								type="text"
+								name="expertise1"
+								id="expertise1"
+								placeholder="Skill"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="expertise2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Skill 2:</label
+							>
+							<input
+								type="text"
+								name="expertise2"
+								id="expertise2"
+								placeholder="Skill"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="expertise3"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Skill 3:</label
+							>
+							<input
+								type="text"
+								name="expertise3"
+								id="expertise3"
+								placeholder="Skill"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="expertise4"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Skill 4:</label
+							>
+							<input
+								type="text"
+								name="expertise4"
+								id="expertise4"
+								placeholder="Skill"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="expertise5"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Skill 5:</label
+							>
+							<input
+								type="text"
+								name="expertise5"
+								id="expertise5"
+								placeholder="Skill"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="lng1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Language 1:</label
+							>
+							<input
+								type="text"
+								name="lng1"
+								id="lng1"
+								placeholder="English"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="lng2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Language 2:</label
+							>
+							<input
+								type="text"
+								name="lng2"
+								id="lng2"
+								placeholder="French"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="phone"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Phone number:</label
+							>
+							<input
+								type="tel"
+								name="phone"
+								id="phone"
+								placeholder="0712345678"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="meail"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Email:</label
+							>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="youremail@email.com"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="adress"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Adress:</label
+							>
+							<input
+								type="text"
+								name="adress"
+								id="adress"
+								placeholder="Street Nr. 1, Bucharest, Sector 1"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="linkedin"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Linkedin:</label
+							>
+							<input
+								type="text"
+								name="linkedin"
+								id="linkedin"
+								placeholder="@mylinkedinaccount"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+					</div>
+				</div>
+
+				<div class="w-full max-w-md mx-auto md:mx-10">
+					<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+						<fieldset class="mb-6">
+							<label
+								for="jobposition1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Job Position</label
+							>
+							<input
+								type="text"
+								name="jobposition1"
+								id="jobposition1"
+								placeholder="Stylist/Fashion Designer"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="company1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Company 1</label
+							>
+							<input
+								type="text"
+								name="company1"
+								id="company1"
+								placeholder="Gucci America Inc."
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="period1-start"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Start:</label
+							>
+							<input
+								type="month"
+								name="period1-start"
+								id="period1-start"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+
+							<label
+								for="period1-end"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>End:</label
+							>
+							<input
+								type="month"
+								name="period1-end"
+								id="period1-end"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="job1-task1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 1:</label
+							>
+							<input
+								type="text"
+								name="job1-task1"
+								id="job1-task1"
+								placeholder="Styled models and celebrities for photo shoots, events and guestings"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="job1-task2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 2:</label
+							>
+							<input
+								type="text"
+								name="job1-task2"
+								id="job1-task2"
+								placeholder="Produced designs for Summer/Spring collections"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="job1-task3"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 3:</label
+							>
+							<input
+								type="text"
+								name="job1-task3"
+								id="job1-task3"
+								placeholder="Sourced fabrics for the brand"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="jobposition2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Job Position</label
+							>
+							<input
+								type="text"
+								name="jobposition2"
+								id="jobposition2"
+								placeholder="Styling and Design Head"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="company1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Company 2</label
+							>
+							<input
+								type="text"
+								name="company2"
+								id="company2"
+								placeholder="Inditex"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="period2-start"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Start:</label
+							>
+							<input
+								type="month"
+								name="period2-start"
+								id="period2-start"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+
+							<label
+								for="period2-end"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>End:</label
+							>
+							<input
+								type="month"
+								name="period2-end"
+								id="period2-end"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="job2-task1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 1:</label
+							>
+							<input
+								type="text"
+								name="job2-task1"
+								id="job2-task1"
+								placeholder="Provided design ideas to in-house designers and clients"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="job2-task2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 2:</label
+							>
+							<input
+								type="text"
+								name="job2-task2"
+								id="job2-task2"
+								placeholder="Planned and developed the 2015 Fall/Winter Collection"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="job2-task3"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Task 3:</label
+							>
+							<input
+								type="text"
+								name="job2-task3"
+								id="job2-task3"
+								placeholder="Supervised the design and production process"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="school1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>School/Univeristy 1</label
+							>
+							<input
+								type="text"
+								name="school1"
+								id="school1"
+								placeholder="Universitatea de Arte Bucuresti"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="degree1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Degree 1:</label
+							>
+							<input
+								type="text"
+								name="degree1"
+								id="degree1"
+								placeholder="Major in Fashion Design and Merchandising"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="degree1-achiev1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 1:</label
+							>
+							<input
+								type="text"
+								name="degree1-achiev1"
+								id="degree1-achiev1"
+								placeholder="Received the Vica Avant-Garde Award in 2012"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<!-- <label
+								for="degree1-achiev2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 2:</label
+							>
+							<input
+								type="text"
+								name="degree1-achiev2"
+								id="degree1-achiev2"
+								placeholder="Designed a streetwear collection for the Vica Charity Fashion Show in 2014"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="degree1-achiev3"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 3:</label
+							>
+							<input
+								type="text"
+								name="degree1-achiev3"
+								id="degree1-achiev3"
+								placeholder="Graduated with honors"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/> -->
+						</fieldset>
+
+						<fieldset class="mb-6">
+							<label
+								for="school2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>School/Univeristy 2</label
+							>
+							<input
+								type="text"
+								name="school2"
+								id="school2"
+								placeholder="Liceul de Arte Plastice Nicolae Tonitza"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="degree2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Degree 2:</label
+							>
+							<input
+								type="text"
+								name="degree2"
+								id="degree2"
+								placeholder="Class Salutatorian"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+
+							<label
+								for="degree2-achiev1"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 1:</label
+							>
+							<input
+								type="text"
+								name="degree2-achiev1"
+								id="degree2-achiev1"
+								placeholder="President of the Brampcrest Student Council, 2007"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<!-- <label
+								for="degree2-achiev2"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 2:</label
+							>
+							<input
+								type="text"
+								name="degree2-achiev2"
+								id="degree2-achiev2"
+								placeholder="Member of the Brampcrest Voleyball Team"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/>
+							<br />
+							<label
+								for="degree2-achiev3"
+								class="block text-gray-700 text-sm font-bold mt-2"
+								>Achievements 3:</label
+							>
+							<input
+								type="text"
+								name="degree2-achiev3"
+								id="degree2-achiev3"
+								placeholder="Volunteer at the BHS Tutor for the Future program"
+								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							/> -->
+						</fieldset>
+					</div>
+				</div>
+			</form>
+			<button
+				class="mt-5 mb-10 block mx-auto bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+				onclick="generateCv()"
+			>
+				Generate CV
+			</button>
+		</div>
+
+		<!-- Resume template -->
+
+		<div
+			id="resume"
+			class="my-10 pb-10 container mx-auto w-full max-w-screen-md text-gray-600 bg-gray-50 shadow-lg hidden"
+		>
+			<div>
+				<div class="overflow-hidden flex bg-gradient-to-b from-sky-200">
+					<img
+						src="/public/default.png"
+						alt="default-picture"
+						id="imgfieldR"
+						class="w-80 h-80 rounded-full -ml-16 -mt-10 shadow-sm"
+					/>
+
+					<div class="ml-10 my-auto">
+						<p id="fnameR" class="text-5xl font-bold">Chitu Catalin</p>
+
+						<p
+							id="professionR"
+							class="text-xl uppercase my-2 font-bold tracking-wide"
+						>
+							Front End Developer
+						</p>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-5 mt-10 text-sm">
+					<div class="ml-5 border-r-2 pr-6 mr-5 col-span-2">
+						<h2 class="font-bold text-xl">Executive Summary</h2>
+						<p id="summaryR">Short summary about yourself</p>
+
+						<h2 class="font-bold text-xl mt-10">Areas of expertise</h2>
+						<p id="expertise1R">Skill 1</p>
+						<p id="expertise2R">Skill 2</p>
+						<p id="expertise3R">Skill 3</p>
+						<p id="expertise4R">Skill 4</p>
+						<p id="expertise5R">Skill 5</p>
+
+						<h2 class="font-bold text-xl mt-10">Languages</h2>
+						<p id="lng1R">Language 1</p>
+						<p id="lng2R">Language 2</p>
+
+						<h2 class="font-bold text-xl mt-10">Contact</h2>
+						<p id="phoneR">0712345678</p>
+						<p id="emailR">Email</p>
+						<p id="adressR">Adress</p>
+						<div>Linkedin: <span id="linkedinR">smth</span></div>
+					</div>
+					<div class="col-span-3 ml-8">
+						<h2 class="font-bold text-xl mb-3">Work experience</h2>
+
+						<p id="jobposition1R" class="font-bold uppercase">Job Position 1</p>
+						<p id="company1R">Company 1</p>
+						<div class="mb-2">
+							<span id="period1-startR">Start</span> to
+							<span id="period1-endR">End</span>
+						</div>
+						<p id="job1-task1R">Task 1</p>
+						<p id="job1-task2R">Task 2</p>
+						<p id="job1-task3R">Task 3</p>
+
+						<p id="jobposition2R" class="font-bold uppercase mt-2">
+							Job Position 2
+						</p>
+						<p id="company2R">Company 2</p>
+						<div class="mb-2">
+							<span id="period2-startR">Start</span> to
+							<span id="period2-endR">End</span>
+						</div>
+						<p id="job2-task1R">Task 1</p>
+						<p id="job2-task2R">Task 2</p>
+						<p id="job2-task3R">Task 3</p>
+
+						<h2 class="font-bold text-xl mt-10 mb-3">Education & Training</h2>
+						<p id="school1R" class="font-bold uppercase">School 1</p>
+						<p id="degree1R">Degree 1</p>
+						<p id="degree1-achiev1R">Achievments</p>
+						<!-- <p id="degree1-achiev2R">Achiev 2</p>
+						<p id="degree1-achiev3R">Achiev 3</p> -->
+
+						<p id="school2R" class="font-bold uppercase mt-2">School 2</p>
+						<p id="degree2R">Degree 2</p>
+						<p id="degree2-achiev1R">Achievments</p>
+						<!-- <p id="degree2-achiev2R">Achiev 2</p>
+						<p id="degree2-achiev3R">Achiev 3</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button
+			id="resume-button"
+			class="hidden mt-5 mb-10 block mx-auto bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+		>
+			Print CV
+		</button>
+	</body>
+</html>
