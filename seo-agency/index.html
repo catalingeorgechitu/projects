@@ -7,35 +7,177 @@
 		<title>SEO Agency</title>
 		<link rel="stylesheet" href="/public/output.css" />
 	</head>
-	<body>
+	<body class="font-body">
 		<!-- header -->
-		<header class="header">
+		<header class="header bg-black">
 			<!-- nav -->
-			<nav class="flex">
-				<div><img src="/public/img/logo.jpg" alt="logo" /></div>
+			<nav class="nav flex">
+				<div>
+					<img class="nav-logo h-20" src="/public/img/logo.jpg" alt="logo" />
+				</div>
 				<!-- nav links -->
-				<ul class="flex">
-					<li>Home</li>
-					<li>Skills</li>
-					<li>Portofolio</li>
-					<li>Blog</li>
-					<li>Contact Us</li>
+				<ul
+					class="nav-links bg-white flex w-full justify-evenly text-3xl font-bold"
+				>
+					<li
+						class="flex items-center justify-center basis-1/5 h-full hover:bg-blue-400"
+					>
+						<a class="" href="#"> Home </a>
+					</li>
+					<li
+						class="flex items-center justify-center basis-1/5 hover:bg-blue-400"
+					>
+						<a class="" href="#"> Skills </a>
+					</li>
+					<li
+						class="flex items-center justify-center basis-1/5 hover:bg-blue-400"
+					>
+						<a href="#"> Portofolio </a>
+					</li>
+					<li
+						class="flex items-center justify-center basis-1/5 hover:bg-blue-400"
+					>
+						<a href="#"> Blog </a>
+					</li>
+					<li
+						class="flex items-center justify-center basis-1/5 hover:bg-blue-400"
+					>
+						<a href="#"> Contact Us </a>
+					</li>
 				</ul>
 				<!-- end of nav links -->
 			</nav>
 			<!-- end of nav -->
 			<!-- landing page -->
-			<section class="landing-page">
-				<div class="landing-box">
-					<h1 class="landing-title">Best SEO Agency...</h1>
-					<h3 class="landing-subtitle">
+			<section
+				class="landing-page h-screen bg-no-repeat bg-fixed bg-landing-bg bg-cover opacity-100"
+			>
+				<div class="overlay h-screen bg-black opacity-60"></div>
+				<div
+					class="landing-box text-white text-center absolute top-0 bottom-0 left-0 right-0 translate-y-2/4"
+				>
+					<h1 class="landing-title text-6xl font-bold">Best SEO Agency...</h1>
+					<h3 class="landing-subtitle text-3xl font-bold my-5">
 						Best SEO strategies and most satisfied customers!
 					</h3>
-					<a href="#">learn more</a>
+					<a class="landing-button border-2 text-3xl p-1 rounded-lg" href="#"
+						>learn more</a
+					>
 				</div>
 			</section>
 			<!-- end of landing page -->
 		</header>
 		<!-- end of header -->
+		<!-- skills -->
+		<section>
+			<!-- title -->
+			<div class="title">
+				<h1 class="title-text">Skills</h1>
+			</div>
+			<!-- end of title -->
+			<!-- skills container -->
+			<div class="skills-container">
+				<article class="skill">
+					<h3 class="skill-title">Best Data</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						voluptatum iusto eaque sunt vel consequuntur.
+					</p>
+				</article>
+				<article class="skill">
+					<h3 class="skill-title">Best Results</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						voluptatum iusto eaque sunt vel consequuntur.
+					</p>
+				</article>
+				<article class="skill">
+					<h3 class="skill-title">Fastest Speed</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						voluptatum iusto eaque sunt vel consequuntur.
+					</p>
+				</article>
+				<article class="skill">
+					<h3 class="skill-title">Innovation</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						voluptatum iusto eaque sunt vel consequuntur.
+					</p>
+				</article>
+			</div>
+			<!-- end of skills container -->
+		</section>
+		<!-- end of skills -->
+		<!-- services -->
+		<section>
+			<!-- title -->
+			<div class="title">
+				<h1 class="title-text">Services</h1>
+			</div>
+			<!-- end of title -->
+			<!-- services container -->
+			<div class="services-container">
+				<article class="service">
+					<h3 class="service-title">Clean SEO</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+				<article class="service">
+					<h3 class="service-title">Clean Text</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+				<article class="service">
+					<h3 class="service-title">Clean Content</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+				<article class="service">
+					<h3 class="service-title">Results</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+				<article class="service">
+					<h3 class="service-title">Persuasion</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+				<article class="service">
+					<h3 class="service-title">Precision</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+						ipsum.
+					</p>
+				</article>
+			</div>
+			<!-- end of skills container -->
+		</section>
+		<!-- end of services -->
+		<!-- portofolio -->
+		<section>
+			<!-- title -->
+			<div class="title">
+				<h1 class="title-text">Portofolio</h1>
+			</div>
+			<!-- end of title -->
+			<div class="portofolio-container">
+				<img class="img-box" src="" alt="" />
+				<div>
+					<div></div>
+				</div>
+			</div>
+		</section>
+		<!-- end of portofolio -->
 	</body>
 </html>
