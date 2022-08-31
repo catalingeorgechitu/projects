@@ -1,12 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-	/* .nav-btn {
-		@apply hover:text-gray-400 hover:cursor-pointer hover:scale-105 transform duration-300 font-bold text-xl;
-	} */
+  .nav {
+    @apply flex;
+  }
+  .nav-logo {
+    @apply h-20 hover:cursor-pointer;
+  }
+  .nav-links {
+    @apply flex w-full justify-evenly bg-white text-3xl font-bold;
+  }
+  .nav-item {
+    @apply flex basis-1/5 transform items-center justify-center text-blue-400 duration-300 hover:cursor-pointer hover:bg-blue-400 hover:text-white;
+  }
+
+  .landing-page {
+    @apply bg-landing-bg h-screen bg-cover bg-fixed bg-no-repeat opacity-100;
+  }
+  .overlay {
+    @apply h-screen bg-black opacity-60;
+  }
+  .landing-box {
+    @apply absolute right-0 left-0 top-0 translate-y-96 text-center text-white;
+  }
+  .landing-title {
+    @apply text-6xl font-bold;
+  }
+  .landing-subtitle {
+    @apply my-5 text-3xl font-bold;
+  }
+  .landing-button {
+    @apply rounded-lg border-2 p-1 text-3xl hover:text-4xl hover:border-4 hover:bg-gray-800 hover:opacity-90 duration-200;
+  }
+
+  .skills-section,
+  .portofolio-section,
+  .team-section,
+  .contact-us-section {
+    @apply bg-blue-200;
+  }
+  .skills-title,
+  .services-title,
+  .portofolio-title,
+  .numbers-title,
+  .team-title,
+  .reviews-title {
+    @apply text-6xl font-bold text-gray-700;
+  }
+  .skills-title-text,
+  .services-title-text,
+  .portofolio-title-text,
+  .numbers-title-text,
+  .team-title-text,
+  .reviews-title-text {
+    @apply pt-10 pl-10;
+  }
+  .skills-container {
+    @apply flex flex-wrap lg:flex-nowrap;
+  }
+  .skill {
+    @apply mx-20 my-10 text-center;
+  }
+  .skill-logo {
+    @apply p-6 text-6xl text-blue-600 duration-300 hover:scale-110 hover:cursor-pointer hover:rounded-full hover:bg-blue-600 hover:text-white;
+  }
+  .skill-title {
+    @apply mb-3 text-3xl font-bold text-blue-600;
+  }
+
+  .services-container,
+  .portofolio-container,
+  .team-container,
+  .reviews-container {
+    @apply p-14 flex flex-wrap justify-between;
+  }
+
+  /* Must clean the code with tidy tailwind from here down */
+  .service {
+    @apply flex items-center basis-1/3 p-5 hover:scale-105 group-hover:text-black hover:font-bold duration-200;
+  }
+  .service-logo {
+    @apply text-5xl w-1/6 text-blue-600 text-center group-hover:text-black duration-200;
+  }
+  .service-content {
+    @apply px-5;
+  }
+  .service-title {
+    @apply text-xl text-blue-600 font-bold group-hover:text-black duration-200;
+  }
+
+  .portofolio {
+    @apply basis-1/3 p-4;
+  }
+  .portofolio-img {
+    @apply relative;
+  }
+  .portofolio-img-box {
+    @apply h-72 w-full object-fill rounded-lg opacity-100 group-hover:opacity-80 duration-300;
+  }
+  .portofolio-overlay {
+    @apply absolute flex justify-between items-center w-full text-lg font-bold bg-gray-400 h-0 bottom-0 pl-10 p-2.5 opacity-0 group-hover:opacity-95 group-hover:h-1/6 duration-700 rounded-b-lg uppercase;
+  }
+  .portofolio-arrow {
+    @apply bg-white rounded-full p-1 mr-5;
+  }
+  .portofolio-button {
+    @apply rounded-md border-2 mx-auto p-3 mt-5 text-white border-white text-3xl bg-blue-700 hover:scale-105 hover:bg-gray-800 hover:opacity-90 duration-200;
+  }
+
+  .numbers-container {
+    @apply flex flex-wrap justify-around lg:flex-nowrap;
+  }
+  .number {
+    @apply mx-20 my-10 text-center group-hover:-translate-y-10 duration-1000 hover:cursor-pointer;
+  }
+  .number-logo {
+    @apply p-6 text-6xl text-blue-600 group-hover:-translate-y-10 duration-1000;
+  }
+  .number-title {
+    @apply mb-3 text-3xl font-bold text-blue-600 group-hover:-translate-y-10 duration-1000;
+  }
+  .number-text {
+    @apply text-2xl font-bold text-gray-500 group-hover:-translate-y-10 duration-1000;
+  }
+
+  .team {
+    @apply basis-1/4 px-2;
+  }
+  .team-img-box {
+    @apply h-72 w-full object-fill rounded-sm;
+  }
+  .team-info {
+    @apply flex justify-between items-center p-4 bg-white;
+  }
+  .team-name,
+  .review-name {
+    @apply font-bold text-xl text-blue-600;
+  }
+  .team-job,
+  .review-job {
+    @apply uppercase font-bold text-gray-500;
+  }
+  .team-social-media {
+    @apply text-gray-500 space-x-2;
+  }
+  .team-right-info {
+    @apply text-4xl opacity-0 group-hover:opacity-100 duration-1000 transform;
+  }
+  .team-arrow {
+    @apply hover:-rotate-90 duration-700 ease-out;
+  }
+
+  .review {
+    @apply basis-1/3 px-2 text-center;
+  }
+  .review-img {
+    @apply h-56 w-56 mx-auto rounded-full mb-4;
+  }
+  .review-text {
+    @apply text-blue-600 text-xl px-20;
+  }
+
+  .contact-us-section {
+    @apply pb-10;
+  }
+  .contact-us-container {
+    @apply flex justify-between mt-2 items-center;
+  }
+  .contact-us-left-section {
+    @apply text-3xl font-bold text-blue-600 pl-10;
+  }
+  .contact-us-info {
+    @apply my-4;
+  }
+  .contact-us-right-section {
+    @apply text-3xl w-1/2;
+  }
+  .contact-us-input {
+    @apply w-full my-2 bg-transparent border-b-4 text-white placeholder-white border-white;
+  }
+  .contact-us-button {
+    @apply rounded-md border-2 border-gray-600 p-1 text-3xl w-full bg-blue-600 hover:bg-gray-800 hover:opacity-90 duration-200;
+  }
 }
