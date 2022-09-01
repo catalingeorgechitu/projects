@@ -10,17 +10,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="/public/output.css" />
+    <script defer src="/src/main.js"></script>
   </head>
   <body class="font-body">
     <!-- header -->
     <header class="header">
       <!-- nav -->
       <nav class="nav">
-        <div>
-          <img class="nav-logo" src="/public/img/logo.jpg" alt="logo" />
+        <div class="nav-logo-burger">
+          <a href="#">
+            <img class="nav-logo" src="/public/img/logo.jpg" alt="logo" />
+          </a>
+          <!-- nav burger -->
+          <i class="nav-burger fa-solid fa-bars"></i>
+          <!-- end of nav burger -->
         </div>
         <!-- nav links -->
-        <ul class="nav-links">
+        <ul class="nav-links hidden">
           <li class="nav-item">
             <a class="" href="#"> Home </a>
           </li>
@@ -185,7 +191,7 @@
             <img
               class="portofolio-img-box"
               src="/public/img/armani.jpg"
-              alt=""
+              alt="armani"
             />
             <div class="portofolio-overlay">
               Giorgio Armani<i
@@ -200,7 +206,7 @@
             <img
               class="portofolio-img-box"
               src="/public/img/chanel.jpg"
-              alt=""
+              alt="chanel"
             />
             <div class="portofolio-overlay">
               Chanel<i class="portofolio-arrow fa-solid fa-arrow-right"></i>
@@ -210,7 +216,11 @@
 
         <div class="portofolio">
           <div class="portofolio-img group">
-            <img class="portofolio-img-box" src="/public/img/dior.jpg" alt="" />
+            <img
+              class="portofolio-img-box"
+              src="/public/img/dior.jpg"
+              alt="dior"
+            />
             <div class="portofolio-overlay">
               Dior<i class="portofolio-arrow fa-solid fa-arrow-right"></i>
             </div>
@@ -218,7 +228,11 @@
         </div>
         <div class="portofolio">
           <div class="portofolio-img group">
-            <img class="portofolio-img-box" src="/public/img/lv.jpg" alt="" />
+            <img
+              class="portofolio-img-box"
+              src="/public/img/lv.jpg"
+              alt="louis vuitton"
+            />
             <div class="portofolio-overlay">
               Louis Vuitton<i
                 class="portofolio-arrow fa-solid fa-arrow-right"
@@ -231,7 +245,7 @@
             <img
               class="portofolio-img-box"
               src="/public/img/prada.jpg"
-              alt=""
+              alt="prada"
             />
             <div class="portofolio-overlay">
               Prada<i class="portofolio-arrow fa-solid fa-arrow-right"></i>
@@ -243,7 +257,7 @@
             <img
               class="portofolio-img-box"
               src="/public/img/versace.jpg"
-              alt=""
+              alt="versace"
             />
             <div class="portofolio-overlay">
               Versace<i class="portofolio-arrow fa-solid fa-arrow-right"></i>
@@ -298,7 +312,11 @@
       <div class="team-container">
         <article class="team group">
           <div class="team-img">
-            <img class="team-img-box" src="/public/img/team-1.jpg" alt="" />
+            <img
+              class="team-img-box"
+              src="/public/img/team-1.jpg"
+              alt="team1"
+            />
           </div>
           <div class="team-info">
             <div class="team-left-info">
@@ -326,7 +344,11 @@
         </article>
         <article class="team group">
           <div class="team-img">
-            <img class="team-img-box" src="/public/img/team-2.jpg" alt="" />
+            <img
+              class="team-img-box"
+              src="/public/img/team-2.jpg"
+              alt="team2"
+            />
           </div>
           <div class="team-info">
             <div class="team-left-info">
@@ -354,7 +376,11 @@
         </article>
         <article class="team group">
           <div class="team-img">
-            <img class="team-img-box" src="/public/img/team-3.jpg" alt="" />
+            <img
+              class="team-img-box"
+              src="/public/img/team-3.jpg"
+              alt="team3"
+            />
           </div>
           <div class="team-info">
             <div class="team-left-info">
@@ -382,7 +408,11 @@
         </article>
         <article class="team group">
           <div class="team-img">
-            <img class="team-img-box" src="/public/img/team-4.jpg" alt="" />
+            <img
+              class="team-img-box"
+              src="/public/img/team-4.jpg"
+              alt="team4"
+            />
           </div>
           <div class="team-info">
             <div class="team-left-info">
@@ -422,7 +452,7 @@
       <!-- reviews container -->
       <div class="reviews-container">
         <article class="review group">
-          <img class="review-img" src="/public/img/team-1.jpg" alt="" />
+          <img class="review-img" src="/public/img/team-1.jpg" alt="team1" />
           <h3 class="review-name">John Doe</h3>
           <h4 class="review-job">SEO Customer</h4>
           <p class="review-text">
@@ -431,7 +461,7 @@
           </p>
         </article>
         <article class="review group">
-          <img class="review-img" src="/public/img/team-2.jpg" alt="" />
+          <img class="review-img" src="/public/img/team-2.jpg" alt="team2" />
           <h3 class="review-name">John Doe</h3>
           <h4 class="review-job">SEO Customer</h4>
           <p class="review-text">
@@ -440,7 +470,7 @@
           </p>
         </article>
         <article class="review group">
-          <img class="review-img" src="/public/img/team-3.jpg" alt="" />
+          <img class="review-img" src="/public/img/team-3.jpg" alt="team3" />
           <h3 class="review-name">John Doe</h3>
           <h4 class="review-job">SEO Customer</h4>
           <p class="review-text">
@@ -484,10 +514,12 @@
           <input class="contact-us-input" type="text" placeholder="Email" />
           <input class="contact-us-input" type="text" placeholder="Subject" />
           <input class="contact-us-input" type="text" placeholder="Message" />
-          <button class="contact-us-button">
-            <i class="fa-regular fa-envelope"></i>
-            Send Message
-          </button>
+          <a href="#">
+            <div class="contact-us-button">
+              <i class="fa-regular fa-envelope"></i>
+              Send Message
+            </div>
+          </a>
         </form>
       </div>
       <!-- end of contact us container -->

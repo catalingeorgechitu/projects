@@ -7,16 +7,22 @@
 
 @layer utilities {
   .nav {
-    @apply flex;
+    @apply flex justify-between flex-col md:flex-row;
+  }
+  .nav-logo-burger {
+    @apply flex justify-between;
   }
   .nav-logo {
-    @apply h-20 hover:cursor-pointer;
+    @apply h-20 p-1 hover:cursor-pointer hover:scale-110 duration-200;
   }
   .nav-links {
-    @apply flex w-full justify-evenly bg-white text-3xl font-bold;
+    @apply md:flex w-full justify-evenly bg-white text-3xl font-bold;
   }
   .nav-item {
     @apply flex basis-1/5 transform items-center justify-center text-blue-400 duration-300 hover:cursor-pointer hover:bg-blue-400 hover:text-white;
+  }
+  .nav-burger {
+    @apply my-auto md:hidden block text-3xl mr-5 hover:cursor-pointer;
   }
 
   .landing-page {
@@ -64,7 +70,7 @@
     @apply flex flex-wrap lg:flex-nowrap;
   }
   .skill {
-    @apply mx-20 my-10 text-center;
+    @apply md:mx-20 m-5 md:my-10 text-center;
   }
   .skill-logo {
     @apply p-6 text-6xl text-blue-600 duration-300 hover:scale-110 hover:cursor-pointer hover:rounded-full hover:bg-blue-600 hover:text-white;
@@ -77,114 +83,114 @@
   .portofolio-container,
   .team-container,
   .reviews-container {
-    @apply p-14 flex flex-wrap justify-between;
+    @apply m-2 md:p-14 flex flex-wrap justify-between;
   }
 
   /* Must clean the code with tidy tailwind from here down */
   .service {
-    @apply flex items-center basis-1/3 p-5 hover:scale-105 group-hover:text-black hover:font-bold duration-200;
+    @apply flex md:basis-1/3 items-center px-1 py-2 md:p-5 duration-200 hover:scale-105 hover:font-bold group-hover:text-black;
   }
   .service-logo {
-    @apply text-5xl w-1/6 text-blue-600 text-center group-hover:text-black duration-200;
+    @apply w-full md:w-1/6 text-center text-5xl text-blue-600 duration-200 group-hover:text-black;
   }
   .service-content {
-    @apply px-5;
+    @apply md:px-5;
   }
   .service-title {
-    @apply text-xl text-blue-600 font-bold group-hover:text-black duration-200;
+    @apply text-xl font-bold text-blue-600 duration-200 group-hover:text-black;
   }
 
   .portofolio {
-    @apply basis-1/3 p-4;
+    @apply md:basis-1/3 w-full p-4;
   }
   .portofolio-img {
     @apply relative;
   }
   .portofolio-img-box {
-    @apply h-72 w-full object-fill rounded-lg opacity-100 group-hover:opacity-80 duration-300;
+    @apply h-72 w-full rounded-lg object-fill opacity-100 duration-300 group-hover:opacity-80;
   }
   .portofolio-overlay {
-    @apply absolute flex justify-between items-center w-full text-lg font-bold bg-gray-400 h-0 bottom-0 pl-10 p-2.5 opacity-0 group-hover:opacity-95 group-hover:h-1/6 duration-700 rounded-b-lg uppercase;
+    @apply absolute bottom-0 flex h-0 w-full items-center justify-between rounded-b-lg bg-gray-400 p-2.5 pl-10 text-lg font-bold uppercase opacity-0 duration-700 group-hover:h-1/6 group-hover:opacity-95;
   }
   .portofolio-arrow {
-    @apply bg-white rounded-full p-1 mr-5;
+    @apply mr-5 rounded-full bg-white p-1 px-2 text-2xl hover:cursor-pointer;
   }
   .portofolio-button {
-    @apply rounded-md border-2 mx-auto p-3 mt-5 text-white border-white text-3xl bg-blue-700 hover:scale-105 hover:bg-gray-800 hover:opacity-90 duration-200;
+    @apply mx-auto mt-5 rounded-md border-2 border-white bg-blue-700 p-3 text-3xl text-white duration-200 hover:scale-105 hover:bg-gray-800 hover:opacity-90;
   }
 
   .numbers-container {
     @apply flex flex-wrap justify-around lg:flex-nowrap;
   }
   .number {
-    @apply mx-20 my-10 text-center group-hover:-translate-y-10 duration-1000 hover:cursor-pointer;
+    @apply mx-20 my-10 text-center duration-1000 hover:cursor-pointer group-hover:-translate-y-10;
   }
   .number-logo {
-    @apply p-6 text-6xl text-blue-600 group-hover:-translate-y-10 duration-1000;
+    @apply p-6 text-6xl text-blue-600 duration-1000 group-hover:-translate-y-10;
   }
   .number-title {
-    @apply mb-3 text-3xl font-bold text-blue-600 group-hover:-translate-y-10 duration-1000;
+    @apply mb-3 text-3xl font-bold text-blue-600 duration-1000 group-hover:-translate-y-10;
   }
   .number-text {
-    @apply text-2xl font-bold text-gray-500 group-hover:-translate-y-10 duration-1000;
+    @apply text-2xl font-bold text-gray-500 duration-1000 group-hover:-translate-y-10;
   }
 
   .team {
-    @apply basis-1/4 px-2;
+    @apply md:basis-1/4 p-2 w-full;
   }
   .team-img-box {
-    @apply h-72 w-full object-fill rounded-sm;
+    @apply h-72 w-full rounded-sm object-fill;
   }
   .team-info {
-    @apply flex justify-between items-center p-4 bg-white;
+    @apply flex items-center justify-between bg-white p-4;
   }
   .team-name,
   .review-name {
-    @apply font-bold text-xl text-blue-600;
+    @apply text-xl font-bold text-blue-600;
   }
   .team-job,
   .review-job {
-    @apply uppercase font-bold text-gray-500;
+    @apply font-bold uppercase text-gray-500;
   }
   .team-social-media {
-    @apply text-gray-500 space-x-2;
+    @apply space-x-2 text-gray-500;
   }
   .team-right-info {
-    @apply text-4xl opacity-0 group-hover:opacity-100 duration-1000 transform;
+    @apply transform text-4xl opacity-0 duration-1000 group-hover:opacity-100;
   }
   .team-arrow {
-    @apply hover:-rotate-90 duration-700 ease-out;
+    @apply duration-700 ease-out hover:-rotate-90 hover:cursor-pointer;
   }
 
   .review {
-    @apply basis-1/3 px-2 text-center;
+    @apply md:basis-1/3 px-2 text-center;
   }
   .review-img {
-    @apply h-56 w-56 mx-auto rounded-full mb-4;
+    @apply mx-auto mb-4 h-56 w-56 rounded-full;
   }
   .review-text {
-    @apply text-blue-600 text-xl px-20;
+    @apply md:px-20 py-2 text-xl text-blue-600;
   }
 
   .contact-us-section {
     @apply pb-10;
   }
   .contact-us-container {
-    @apply flex justify-between mt-2 items-center;
+    @apply mt-2 flex flex-wrap items-center justify-between;
   }
   .contact-us-left-section {
-    @apply text-3xl font-bold text-blue-600 pl-10;
+    @apply pl-10 text-3xl font-bold text-blue-600;
   }
   .contact-us-info {
     @apply my-4;
   }
   .contact-us-right-section {
-    @apply text-3xl w-1/2;
+    @apply md:w-1/2 text-3xl;
   }
   .contact-us-input {
-    @apply w-full my-2 bg-transparent border-b-4 text-white placeholder-white border-white;
+    @apply my-2 w-full border-b-4 border-white bg-transparent text-white placeholder-white;
   }
   .contact-us-button {
-    @apply rounded-md border-2 border-gray-600 p-1 text-3xl w-full bg-blue-600 hover:bg-gray-800 hover:opacity-90 duration-200;
+    @apply w-full rounded-md border-2 border-gray-600 bg-blue-600 p-1 text-center text-3xl duration-200 hover:bg-gray-800 hover:opacity-90;
   }
 }
