@@ -21,7 +21,7 @@ module.exports = {
 					},
 					'100%': {
 						transform: 'translateX(0px) translateY(0px) scale(1)',
-					},
+					},	
 				},
 			},
 			animation: {
