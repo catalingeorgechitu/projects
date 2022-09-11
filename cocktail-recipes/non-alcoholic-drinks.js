@@ -1,6 +1,6 @@
-'use strict';
-import { BASE_URL, getDrinks } from './utils.js';
+"use strict";
+import { getDrinksByType } from "./utils.js";
 
-document.addEventListener('DOMContentLoaded', () => {
-	getDrinks('non_alcoholic');
+document.addEventListener("DOMContentLoaded", () => {
+  getDrinksByType("non_alcoholic");
 });
