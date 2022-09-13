@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocktail</title>
-    <script type="module" src="drink.js"></script>
-  </head>
-  <body>
-    <div>
-      <h1 class="title"></h1>
-      <img class="cocktailImg" />
-      <h2 class="type"></h2>
-      <div class="instructions">
-        <h2>Instructions</h2>
-      </div>
-      <div style="display: flex" class="ingredients-container">
-        <div style="padding-right: 20px" class="measures">
-          <h3>Measures</h3>
-        </div>
-        <div class="ingredients"><h3>Ingredients</h3></div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cocktail</title>
+		<script type="module" src="/src/drink.js"></script>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body>
+		<div class="page-container">
+			<img class="border-up" src="public/img/border-up.jpg" />
+
+			<header>
+				<img class="logo" src="/public/img/logo.jpg" alt="logo" />
+				<div class="title">Adi's drinks</div>
+			</header>
+
+			<div class="drink-container">
+				<div class="img-container">
+					<img class="cocktailImg" />
+				</div>
+				<div class="info-container">
+					<h1 class="drink-title"></h1>
+					<h2 class="type"></h2>
+					<div class="instructions">
+						<h2>Instructions</h2>
+					</div>
+					<div class="ingredients-container">
+						<div class="measures">
+							<h3>Measures</h3>
+						</div>
+						<div class="ingredients"><h3>Ingredients</h3></div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="copyrights"></div>
+			</footer>
+
+			<img class="border-down" src="public/img/border-down.jpg" />
+		</div>
+	</body>
 </html>

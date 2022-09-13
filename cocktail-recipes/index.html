@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cata's Drinks</title>
-    <script type="module" src="main.js"></script>
-  </head>
-  <body>
-    <form class="form" action="search-drinks.html">
-      <input
-        class="search-input"
-        type="search"
-        placeholder="Search drinks by name..."
-      />
-    </form>
-    <div class="alcoholic-drinks">
-      <h1 class="alcoholic-drinks-title">Alcoholic drinks</h1>
-    </div>
-    <div class="non-alcoholic-drinks">
-      <h1 class="non-alcoholic-drinks-title">Non Alcoholic drinks</h1>
-    </div>
-    <div class="random-drinks">
-      <h1 class="random-drink-title">Random</h1>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cata's Drinks</title>
+		<script type="module" src="/src/main.js"></script>
+		<link rel="stylesheet" href="/public/output.css" />
+	</head>
+	<body>
+		<div class="page-container">
+			<img class="border-up" src="public/img/border-up.jpg" />
+			<header>
+				<img class="logo" src="/public/img/logo.jpg" alt="logo" />
+				<div class="title">Adi's drinks</div>
+			</header>
+
+			<div class="homepage-drinks-container">
+				<i class="fas fa-sad-cry"></i>
+				<div class="search-bars">
+					<form class="form-name" action="search-drinks-name.html">
+						<input
+							class="search-input-name"
+							type="search"
+							placeholder="Search drinks by name..."
+						/>
+					</form>
+					<form
+						class="form-ingredients"
+						action="search-drinks-ingredients.html"
+					>
+						<input
+							class="search-input-ingredients"
+							type="search"
+							placeholder="Search drinks by ingredients..."
+						/>
+					</form>
+				</div>
+				<div class="homepage-drinks-buttons">
+					<div class="alcoholic-drinks">
+						<h1 class="alcoholic-drinks-title">Alcoholic drinks</h1>
+						<img
+							class="alcoholic-drinks-img homepage-img"
+							src="/public/img/alcoholic.jpg"
+							alt="alcoholic drinks"
+						/>
+					</div>
+					<div class="non-alcoholic-drinks">
+						<h1 class="non-alcoholic-drinks-title">Non Alcoholic drinks</h1>
+						<img
+							class="non-alcoholic-drinks-img homepage-img"
+							src="/public/img/non-alcoholic.jpg"
+							alt="non alcoholic drinks"
+						/>
+					</div>
+					<div class="random-drinks">
+						<h1 class="random-drinks-title">Random drink</h1>
+						<img
+							class="random-drinks-img homepage-img"
+							src="/public/img/random.jpg"
+							alt="random drinks"
+						/>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="copyrights"></div>
+			</footer>
+			<img class="border-down" src="public/img/border-down.jpg" />
+		</div>
+	</body>
 </html>

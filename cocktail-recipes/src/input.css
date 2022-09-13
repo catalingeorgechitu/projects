@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	body {
+		@apply bg-black text-gray-500 font-body;
+	}
+
+	/* borders */
+	.border-up {
+		@apply absolute top-0 z-10;
+	}
+
+	.border-down {
+		@apply absolute bottom-0 z-10;
+	}
+	/* end of borders */
+
+	/* header */
+	header {
+		@apply grid grid-cols-3 mt-4 md:mt-6 z-50;
+	}
+	.logo {
+		@apply col-span-1 items-center h-10 w-10 rounded-full md:w-12 md:h-12 lg:w-16 lg:h-16 m-auto hover:cursor-pointer;
+	}
+	.title {
+		@apply col-span-1 text-center text-4xl md:text-6xl lg:text-8xl text-customBrown font-title m-auto;
+	}
+	/* end of header */
+
+	/* pages structure */
+	.page-container {
+		@apply flex flex-col max-w-full relative min-h-screen z-50;
+	}
+	/* end of pages structure */
+
+	/* homepage container */
+	.homepage-drinks-container {
+		@apply flex flex-col justify-center md:mx-5 flex-1 mb-28;
+	}
+	.alcoholic-drinks,
+	.non-alcoholic-drinks,
+	.random-drinks {
+		@apply hover:scale-105 hover:cursor-pointer duration-1000;
+	}
+	.alcoholic-drinks-title,
+	.non-alcoholic-drinks-title,
+	.random-drinks-title {
+		@apply text-customBrown text-5xl font-extralight text-center my-8;
+	}
+	.homepage-img {
+		@apply w-96 h-96 mx-auto;
+	}
+	.homepage-drinks-buttons {
+		@apply flex flex-wrap gap-16 justify-center content-center mx-4;
+	}
+	.search-bars {
+		@apply flex flex-wrap justify-around z-0 mt-2;
+	}
+	input {
+		@apply bg-black w-60 m-2 p-2 border-customBrown border rounded-md focus:border-customBrown focus:outline-none focus:scale-105 duration-700 focus:animate-pulse;
+	}
+	/* end of main homepage container */
+
+	/* drinks container */
+	.error-container {
+		@apply flex flex-col justify-center;
+	}
+	.error {
+		@apply text-customBrown text-center text-3xl mt-4 font-light;
+	}
+	.sad-face-container {
+		@apply flex justify-center mx-auto;
+	}
+	i {
+		@apply text-customBrown text-6xl block my-5;
+	}
+	.drinks-container {
+		@apply flex flex-wrap p-2 my-10 md:my-20 max-w-screen-2xl justify-center mx-auto gap-8 z-50;
+	}
+	.drinks-container div {
+		@apply w-64 hover:cursor-pointer hover:scale-105 duration-700;
+	}
+	.drinks-container div img {
+		@apply w-full rounded-md;
+	}
+	.drinks-title {
+		@apply text-lg text-center font-light text-customBrown;
+	}
+	/* end of drinks container */
+
+	/* drink container (individual drink) */
+	.drink-container {
+		@apply flex flex-wrap justify-center p-4 my-auto;
+	}
+	.cocktailImg {
+		@apply max-h-128;
+	}
+	.info-container {
+		@apply md:mx-16 max-w-lg;
+	}
+	.type {
+		@apply text-center font-bold;
+	}
+	.cocktailImg {
+		@apply rounded-md;
+	}
+	.drink-title {
+		@apply text-3xl text-center font-light text-customBrown;
+	}
+	.instructions h2 {
+		@apply font-bold;
+	}
+	.ingredients-container {
+		@apply flex gap-4 my-10;
+	}
+	.measures h3 {
+		@apply font-bold;
+	}
+	.ingredients h3 {
+		@apply font-bold;
+	}
+	/* end of drink container (individual drink) */
+	/* footer */
+	footer {
+		@apply z-50 text-center text-customBrown font-light mb-6 mt-auto;
+	}
+	/* end of footer */
+}
