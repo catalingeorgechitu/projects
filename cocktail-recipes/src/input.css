@@ -7,7 +7,7 @@
 
 @layer utilities {
 	body {
-		@apply bg-black text-gray-500 font-body;
+		@apply bg-black text-gray-500 font-body max-w-screen-2xl mx-auto;
 	}
 
 	/* borders */
@@ -23,6 +23,24 @@
 	/* header */
 	header {
 		@apply grid grid-cols-3 mt-4 md:mt-6 z-50;
+	}
+	.menu {
+		@apply flex items-center justify-center text-xl text-customBrown font-light gap-6;
+	}
+	.menu-favorites {
+		@apply hover:cursor-pointer hover:scale-105 duration-500 hidden md:block;
+	}
+	.menu-measures {
+		@apply hover:cursor-pointer hover:scale-105 duration-500 hidden md:block;
+	}
+	.menu-burger {
+		@apply text-customBrown md:!hidden hover:cursor-pointer hover:scale-105 duration-500;
+	}
+	.hidden-menu {
+		@apply bg-gray-800 absolute w-screen flex flex-wrap flex-col right-0 left-0 top-16 p-2 md:hidden;
+	}
+	.hidden-option {
+		@apply border rounded-sm w-full border-customBrown text-center my-2 p-1 text-gray-500 hover:cursor-pointer scale-95 hover:scale-100 duration-500;
 	}
 	.logo {
 		@apply col-span-1 items-center h-10 w-10 rounded-full md:w-12 md:h-12 lg:w-16 lg:h-16 m-auto hover:cursor-pointer;
@@ -76,11 +94,14 @@
 	.sad-face-container {
 		@apply flex justify-center mx-auto;
 	}
-	i {
+	.sad-face {
 		@apply text-customBrown text-6xl block my-5;
 	}
+	.type-title {
+		@apply md:text-4xl text-customBrown md:mt-10 text-center italic z-50 font-light text-2xl mt-5;
+	}
 	.drinks-container {
-		@apply flex flex-wrap p-2 my-10 md:my-20 max-w-screen-2xl justify-center mx-auto gap-8 z-50;
+		@apply flex flex-wrap p-2 my-5 md:my-10 max-w-screen-2xl justify-center mx-auto gap-8 z-50;
 	}
 	.drinks-container div {
 		@apply w-64 hover:cursor-pointer hover:scale-105 duration-700;
@@ -91,6 +112,13 @@
 	.drinks-title {
 		@apply text-lg text-center font-light text-customBrown;
 	}
+	.measures-container {
+		@apply flex-nowrap gap-0 mx-0 text-sm md:mx-auto md:text-base text-center;
+	}
+	.measures-title {
+		@apply text-customBrown text-sm md:text-lg;
+	}
+
 	/* end of drinks container */
 
 	/* drink container (individual drink) */
@@ -99,6 +127,12 @@
 	}
 	.cocktailImg {
 		@apply max-h-128;
+	}
+	.img-container {
+		@apply relative;
+	}
+	.like-icon {
+		@apply md:text-2xl absolute top-0 right-0 mr-3 mt-3 text-xl text-customBrown cursor-pointer bg-black rounded-full p-2 hover:scale-125 duration-500;
 	}
 	.info-container {
 		@apply md:mx-16 max-w-lg;

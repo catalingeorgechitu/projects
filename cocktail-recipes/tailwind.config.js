@@ -6,8 +6,9 @@ module.exports = {
 		'./drink.html',
 		'./alcoholic-drinks.html',
 		'./non-alcoholic-drinks.html',
-		'search-drinks-ingredients.html',
-		'search-drinks-name.html',
+		'./search-drinks-ingredients.html',
+		'./search-drinks-name.html',
+		'./measures.html',
 	],
 	theme: {
 		extend: {

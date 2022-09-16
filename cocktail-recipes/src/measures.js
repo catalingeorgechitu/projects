@@ -1,8 +1,7 @@
 'use strict';
-import { getDrinksByType, getDate, goToHomepage } from './utils.js';
+import { getDate, goToHomepage } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-	getDrinksByType('non_alcoholic');
 	getDate();
 
 	// adds listener to logo for sending the user to homepage when tapped

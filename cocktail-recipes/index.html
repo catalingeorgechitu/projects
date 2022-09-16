@@ -4,9 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cata's Drinks</title>
+		<title>Adi's Drinks</title>
 		<script type="module" src="/src/main.js"></script>
 		<link rel="stylesheet" href="/public/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
 	</head>
 	<body>
 		<div class="page-container">
@@ -14,10 +18,18 @@
 			<header>
 				<img class="logo" src="/public/img/logo.jpg" alt="logo" />
 				<div class="title">Adi's drinks</div>
+				<div class="menu">
+					<div class="menu-favorites favorites-button">Favorites</div>
+					<div class="menu-measures measures-button">Measures conversion</div>
+					<i class="menu-burger fa-solid fa-bars"></i>
+					<ul class="!hidden hidden-menu">
+						<li class="hidden-option favorites-button">Favorites</li>
+						<li class="hidden-option measures-button">Measures conversion</li>
+					</ul>
+				</div>
 			</header>
 
 			<div class="homepage-drinks-container">
-				<i class="fas fa-sad-cry"></i>
 				<div class="search-bars">
 					<form class="form-name" action="search-drinks-name.html">
 						<input

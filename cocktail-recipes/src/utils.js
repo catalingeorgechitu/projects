@@ -37,7 +37,7 @@ export function getDrinksByIngredients(inputValueIngredients) {
 }
 
 // error function to throw custom messages
-function catchError(message) {
+export function catchError(message) {
 	let errorMessage = document.createElement('h3');
 	let sadFace = document.createElement('i');
 	let sadFaceContainer = document.createElement('div');
@@ -45,7 +45,7 @@ function catchError(message) {
 
 	errorContainer.setAttribute('class', 'error-container');
 	sadFaceContainer.setAttribute('class', 'sad-face-container');
-	sadFace.setAttribute('class', 'fas fa-sad-cry');
+	sadFace.setAttribute('class', 'sad-face fas fa-sad-cry');
 	errorMessage.setAttribute('class', 'error');
 
 	errorMessage.appendChild(document.createTextNode(message));
@@ -89,7 +89,7 @@ export function createDrinks(data) {
 		drinkTitle.setAttribute('class', 'drinks-title');
 
 		// adds an event listener for click on each drink in order to get the id of drink, then sets the id to localStorage and navigates to the drink page
-		eachDrink.addEventListener('click', function (e) {
+		eachDrink.addEventListener('click', e => {
 			let isNull = e.target.getAttribute('id');
 
 			if (isNull == null) {
