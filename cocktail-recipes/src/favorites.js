@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function getDrinksFromLocalStorage() {
 	let favorites = [];
 	favorites = localStorage.getItem('favorites');
-	console.log(favorites.length);
+
 	if (favorites === null || favorites === undefined) {
 		catchError(
 			"Ooopppsss, looks like you don't have any favorite drink added yet..."
