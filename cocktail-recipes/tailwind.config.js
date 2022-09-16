@@ -9,6 +9,7 @@ module.exports = {
 		'./search-drinks-ingredients.html',
 		'./search-drinks-name.html',
 		'./measures.html',
+		'./favorites.html',
 	],
 	theme: {
 		extend: {
