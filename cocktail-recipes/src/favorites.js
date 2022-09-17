@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	logoButton.addEventListener('click', goToHomepage);
 });
 
+// gets favorite drinks from the localStorage, if there are none, throws an error to the user
 function getDrinksFromLocalStorage() {
 	let favorites = [];
 	favorites = localStorage.getItem('favorites');

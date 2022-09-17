@@ -22,65 +22,63 @@
 
 	/* header */
 	header {
-		@apply grid grid-cols-3 mt-4 md:mt-6 z-50;
+		@apply z-50 mt-4 grid grid-cols-3 md:mt-6;
 	}
 	.menu {
-		@apply flex items-center justify-center text-xl text-customBrown font-light gap-6;
+		@apply text-customBrown flex items-center justify-center gap-6 text-xl font-light;
 	}
-	.menu-favorites {
-		@apply hover:cursor-pointer hover:scale-105 duration-500 hidden md:block;
-	}
+	.menu-favorites,
 	.menu-measures {
-		@apply hover:cursor-pointer hover:scale-105 duration-500 hidden md:block;
+		@apply hidden duration-500 hover:scale-105 hover:cursor-pointer md:block;
 	}
 	.menu-burger {
-		@apply text-customBrown md:!hidden hover:cursor-pointer hover:scale-105 duration-500;
+		@apply text-customBrown duration-500 hover:scale-105 hover:cursor-pointer md:!hidden;
 	}
 	.hidden-menu {
-		@apply bg-gray-800 absolute w-screen flex flex-wrap flex-col right-0 left-0 top-16 p-2 md:hidden;
+		@apply absolute right-0 left-0 top-16 flex w-screen flex-col flex-wrap bg-gray-800 p-2 md:hidden;
 	}
 	.hidden-option {
-		@apply border rounded-sm w-full border-customBrown text-center my-2 p-1 text-gray-500 hover:cursor-pointer scale-95 hover:scale-100 duration-500;
+		@apply border-customBrown my-2 w-full scale-95 rounded-sm border p-1 text-center text-gray-500 duration-500 hover:scale-100 hover:cursor-pointer;
 	}
 	.logo {
-		@apply col-span-1 items-center h-10 w-10 rounded-full md:w-12 md:h-12 lg:w-16 lg:h-16 m-auto hover:cursor-pointer hover:scale-105 duration-700;
+		@apply col-span-1 m-auto h-10 w-10 items-center rounded-full duration-700 hover:scale-105 hover:cursor-pointer md:h-12 md:w-12 lg:h-16 lg:w-16;
 	}
 	.title {
-		@apply col-span-1 text-center text-4xl md:text-6xl lg:text-8xl text-customBrown font-title m-auto;
+		@apply text-customBrown font-title col-span-1 m-auto text-center text-4xl md:text-6xl lg:text-8xl;
 	}
 	/* end of header */
 
 	/* pages structure */
 	.page-container {
-		@apply flex flex-col max-w-full relative min-h-screen z-50;
+		@apply relative z-50 flex min-h-screen max-w-full flex-col;
 	}
 	/* end of pages structure */
 
 	/* homepage container */
 	.homepage-drinks-container {
-		@apply flex flex-col justify-center md:mx-5 flex-1 mb-28;
+		@apply mb-28 flex flex-1 flex-col justify-center md:mx-5;
 	}
 	.alcoholic-drinks,
 	.non-alcoholic-drinks,
 	.random-drinks {
-		@apply hover:scale-105 hover:cursor-pointer duration-1000;
+		@apply duration-1000 hover:scale-105 hover:cursor-pointer;
 	}
 	.alcoholic-drinks-title,
 	.non-alcoholic-drinks-title,
 	.random-drinks-title {
-		@apply text-customBrown text-5xl font-extralight text-center my-8;
+		@apply text-customBrown my-8 text-center text-5xl font-extralight;
 	}
 	.homepage-img {
-		@apply w-96 h-96 mx-auto;
+		@apply mx-auto h-96 w-96;
 	}
 	.homepage-drinks-buttons {
-		@apply flex flex-wrap gap-16 justify-center content-center mx-4;
+		@apply mx-4 flex flex-wrap content-center justify-center gap-16;
 	}
 	.search-bars {
-		@apply flex flex-wrap justify-around z-0 mt-2;
+		@apply z-0 mt-2 flex flex-wrap justify-around;
 	}
 	input {
-		@apply bg-black w-60 m-2 p-2 border-customBrown border rounded-md focus:border-customBrown focus:outline-none focus:scale-105 duration-700 focus:animate-pulse;
+		@apply border-customBrown focus:border-customBrown m-2 w-60 rounded-md border bg-black p-2 duration-700 focus:scale-105 focus:animate-pulse focus:outline-none;
 	}
 	/* end of main homepage container */
 
@@ -89,31 +87,34 @@
 		@apply flex flex-col justify-center;
 	}
 	.error {
-		@apply text-customBrown text-center text-3xl mt-4 font-light;
+		@apply text-customBrown mt-4 text-center text-3xl font-light;
 	}
 	.sad-face-container {
-		@apply flex justify-center mx-auto;
+		@apply mx-auto flex justify-center;
 	}
 	.sad-face {
-		@apply text-customBrown text-6xl block my-5;
+		@apply text-customBrown my-5 block text-6xl;
 	}
 	.type-title {
-		@apply md:text-4xl text-customBrown md:mt-10 text-center italic z-50 font-light text-2xl mt-5;
+		@apply text-customBrown z-50 mt-5 text-center text-2xl font-light italic md:mt-10 md:text-4xl;
 	}
 	.drinks-container {
-		@apply flex flex-wrap p-2 my-5 md:my-10 max-w-screen-2xl justify-center mx-auto gap-8 z-50;
+		@apply z-50 my-5 mx-auto flex max-w-screen-2xl flex-wrap justify-center gap-8 p-2 md:my-10;
 	}
 	.drinks-container div {
-		@apply w-64 hover:cursor-pointer hover:scale-105 duration-700;
+		@apply w-64 duration-700 hover:scale-105 hover:cursor-pointer;
 	}
 	.drinks-container div img {
 		@apply w-full rounded-md;
 	}
 	.drinks-title {
-		@apply text-lg text-center font-light text-customBrown;
+		@apply text-customBrown text-center text-lg font-light;
 	}
 	.measures-container {
-		@apply flex-nowrap gap-0 mx-0 text-sm md:mx-auto md:text-base text-center;
+		@apply mx-0 flex-nowrap gap-0 text-center text-sm md:mx-auto md:text-base;
+	}
+	.measures-container p {
+		@apply border-customBrown border-b-[1px] px-3;
 	}
 	.measures-title {
 		@apply text-customBrown text-sm md:text-lg;
@@ -123,7 +124,7 @@
 
 	/* drink container (individual drink) */
 	.drink-container {
-		@apply flex flex-wrap justify-center p-4 my-auto;
+		@apply my-auto flex flex-wrap justify-center p-4;
 	}
 	.cocktailImg {
 		@apply max-h-128;
@@ -132,10 +133,10 @@
 		@apply relative;
 	}
 	.like-icon {
-		@apply md:text-2xl absolute top-0 right-0 mr-3 mt-3 text-xl text-customBrown cursor-pointer bg-black rounded-full p-2 hover:scale-125 duration-500;
+		@apply text-customBrown absolute top-0 right-0 mr-3 mt-3 cursor-pointer rounded-full bg-black p-2 text-xl duration-500 hover:scale-125 md:text-2xl;
 	}
 	.info-container {
-		@apply md:mx-16 max-w-lg;
+		@apply max-w-lg md:mx-16;
 	}
 	.type {
 		@apply text-center font-bold;
@@ -144,13 +145,13 @@
 		@apply rounded-md;
 	}
 	.drink-title {
-		@apply text-3xl text-center font-light text-customBrown;
+		@apply text-customBrown text-center text-3xl font-light;
 	}
 	.instructions h2 {
 		@apply font-bold;
 	}
 	.ingredients-container {
-		@apply flex gap-4 my-10;
+		@apply my-10 flex gap-4;
 	}
 	.measures h3 {
 		@apply font-bold;
@@ -161,7 +162,7 @@
 	/* end of drink container (individual drink) */
 	/* footer */
 	footer {
-		@apply z-50 text-center text-customBrown font-light mb-6 mt-auto;
+		@apply text-customBrown z-50 mb-6 mt-auto text-center font-light;
 	}
 	/* end of footer */
 }

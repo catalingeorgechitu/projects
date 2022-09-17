@@ -45,6 +45,7 @@ randomDrinksButton.addEventListener('click', randomDrinksClicked);
 
 // functions for search inputs and clicks
 
+//opens and closes the menu tab
 function menuBurgerClicked() {
 	let hiddenMenu = document.getElementsByClassName('hidden-menu')[0];
 
