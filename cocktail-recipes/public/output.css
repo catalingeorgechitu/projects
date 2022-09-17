@@ -1052,8 +1052,13 @@ input:focus{
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(182 140 78 / var(--tw-border-opacity));
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+}
+
+@media (min-width: 768px){
+  .measures-container p{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .measures-title{
